@@ -1,0 +1,106 @@
+/*Styles for the search box that appears on the front page and library front pages*/
+#qs-banner {margin-bottom:0}
+#qs-banner img {width:150px}
+#qs-banner a {border:none}
+#qs-container {
+  height:65px;
+  background:#36404e;
+  padding: 20px 15px;
+  border-radius:10px
+}
+#simple {font-size:32px}
+#search-box {
+  background:#fff;
+  max-height:60px
+}
+#primoQueryTemp {
+  padding:0px 50px 0 10px;
+  width:100%;
+  margin:0;
+  border:none;
+  height:41px;
+  box-shadow:none !important;
+  font-size:16px;
+  border-radius: 5px;
+  float:left;
+  position:relative;
+  z-index:2;
+}
+::-webkit-input-placeholder{color:#222}
+:-moz-placeholder{color:#222;opacity:1}
+::-moz-placeholder{color:#222;opacity:1}
+:-ms-input-placeholder{color:#222}
+#search_scope {
+  display:none;
+  border: none;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #000 50%), linear-gradient(135deg, #000 50%, transparent 50%);
+  background-position: 130px 14px,135px 14px;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 25px;
+}
+#search_scope:focus {box-shadow:none}
+#search_scope options {padding:10px}
+#scope-suggestion {
+  display:none;
+  background:#fff;
+  min-height:70px;
+  border:1px solid #000;
+  border-top:none;
+  margin-left:-1px;
+  font-size:16px;
+  position:relative;
+  z-index:1;
+  border-radius:5px 7px 0 0
+}
+#scope-suggestion div {
+  clear:both;
+  margin:0px 10px 10px;
+  word-wrap:break-word  
+}
+#scope-suggestion .search-scopes {
+  color:#cc0033;
+  font-style:italic;
+  font-weight:700
+}
+#scope-suggestion div img {
+  width:24px;
+  height:24px;
+  margin:0 5px 0
+}
+#scope-suggestion div:hover{
+  cursor:pointer;
+  background:#aaa
+}
+img#go {
+  width:37px;
+  height:37px;
+  border: 0;
+  background-color:#cc0033;
+  padding:0 4px 4px 0px;
+  float:right;
+  border-radius: 0 5px 5px 0;
+  position:relative;
+  z-index:2;
+  margin-left:-41px
+}
+img#go:hover {cursor:pointer}
+#qs-links {
+  font-size:14px;
+  color:#fff
+}
+#qs-link-help {
+  float:left;
+  margin-top:10px;
+  margin-left:9px}
+#qs-link-advanced {
+  float:right;
+  margin-top:10px
+}
+#qs-links a:link,
+#qs-links a:visited {color:#fff}
+#qs-links a:hover {border-bottom:1px solid #fff}
+a#about-icon:hover {border-bottom:none !important}
