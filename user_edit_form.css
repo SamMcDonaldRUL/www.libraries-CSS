@@ -1,0 +1,32 @@
+/* This file contains styling for the user profile edit form. (/user/##/edit)*/
+
+/*set borders for each section*/
+#edit-picture,
+#edit-field-profile-field-1,
+#edit-field-profile-field-2,
+#edit-field-profile-publications,
+#edit-field-profile-experience,
+#edit-field-profile-fields,
+#edit-field-researcher-identifier,
+#edit-field-research-identifier,
+#edit-field-orcid-id,
+#edit-field-researcherid,
+#edit-field-profile-resume,
+#edit-field-profile-website,
+#edit-field-facebook,
+#edit-field-twitter,
+#edit-field-linkedin  {
+  border-bottom:1px solid black;
+}
+/*increase the field label font size, input text, and help text*/
+label {font-size:1.1em}
+.text-format-wrapper .description,
+.form-item .description {
+  font-size:1em
+}
+.form-actions input {
+  font-size:1.1em;
+  font-weight:700
+}
+/*class to hide the email field...the class name is set via php code in the RUL_custom_code module*/
+.hideme {display:none}

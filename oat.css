@@ -1,0 +1,102 @@
+/*START front page of OAT styling*/
+#faculty{
+  background:url(/sites/default/files/oat/faculty_090617.jpg);
+  height:411px;
+  margin:-20px -10px 0
+}
+#faculty-left {
+  float: left;
+  margin-top: 146px;
+  margin-left: 41px;
+  margin-right: 205px;
+}
+#faculty-left a{
+  display: block;
+  width: 159px;
+  height: 48px;
+}
+#faculty-right {
+  float: left;
+  width: 291px;
+  height: 275px;
+  margin-left: 165px;
+  margin-top: 135px;
+}
+#faculty-right ul,
+#students-right ul {
+  padding:1em 1em 1em
+}
+#faculty-right ul {padding-top:5px}
+#faculty-right ul li,
+#students-right ul li {
+  list-style:none;
+  margin-bottom:20px
+}
+#faculty-right ul li a:link,
+#faculty-right ul li a:visited,
+#students-right ul li a:link,
+#students-right ul li a:visited,
+#bottom-row-general ul li a:link,
+#bottom-row-general ul li a:visited {
+  color:#fff;
+  /* font-size:1.2em; */
+}
+#students{
+  background:url(/sites/default/files/oat/students_090617.jpg);
+  background-position-x: -1px;
+  height:238px;
+  margin:20px -10px
+}
+#students-left {
+  float: left;
+  margin-top: 14px;
+  margin-left: 38px;
+  margin-right: 206px;
+}
+#students-left a{
+  display: block;
+  width: 160px;
+  height: 47px;
+}
+#students-right {
+  float: left;
+  width: 291px;
+  height: 237px;
+  margin-left: 165px;
+}
+#bottom-row-general {
+  background:#647A99;
+  height: 50px;
+  width: 45%;
+  margin: 0 auto;
+}
+#bottom-row-general ul {
+  padding:1.2em
+}
+#bottom-row-general ul li{
+  display:inline;
+  margin-right:32px
+}
+/*END front page of OAT styling*/
+
+/*START OAT sub-pages styling*/
+img#oat-subpage-graphic {
+  margin:-12px -10px 0;
+}
+h2.block-title {
+  font-size:18px;
+  line-height:30px;
+  height:33px;
+  border:none;
+  background: url(/sites/default/files/oat/oat-nav.png);
+  background-size:cover;
+}
+div.descriptive-page-right-box-nav-content ul {
+  margin-left:0;
+}
+div.descriptive-page-right-box-nav-content ul li:last-child {
+  border:none;
+}
+ol#faq li {font-weight:700}
+ol#faq li > * {font-weight:400}
+/*END OAT sub-pages styling*/

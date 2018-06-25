@@ -1,0 +1,10 @@
+/*Print css for RUL_D7 theme*/
+
+/*hide the slideout tabs*/
+.slide-out-div {
+  display:none;
+}
+/*hide the feedback tab (counting opinions survey) */
+#feedback_simple {
+  display:none;
+}

@@ -1,0 +1,9 @@
+/*styling for DCRC pages*/
+#block-block-38 ul.rteindent1 {margin-left:1em;}
+#block-block-38 .content {
+  font-family: 'Droid Sans', sans-serif;
+  border: 1px solid #cccccc;
+  border-top: none;
+  padding: .5em;
+  width: auto;
+}

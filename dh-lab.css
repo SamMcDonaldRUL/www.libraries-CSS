@@ -1,0 +1,7 @@
+/* Styles specific to the Digital Humanities page*/
+
+/*library info image*/
+.views-field-field-library-image {border:none}
+.views-field-field-library-image img {width:auto}
+/*left text box*/
+#block-nodeblock-6015 .content {margin-top:5px;}

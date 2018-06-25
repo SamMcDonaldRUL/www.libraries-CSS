@@ -1,0 +1,95 @@
+/* bookroom_events.css */
+body {
+  min-width:100% !important;
+  background:#D21034 !important;
+}
+.container-12,
+.container-12 .grid-12 {
+  width:99% !important;
+}
+#page {background:#D21034}
+.zone {
+  background:none;
+  border:none;
+  box-shadow:none;
+}
+#feedback_simple {display:none;}
+#room_name,
+#date,
+#no-events {
+  display:block;
+  font-family:serif;
+  font-size:56px;
+  color:#fff;
+  line-height:66px;
+}
+#no-events {
+  color:#000;
+}
+.event {
+  background:#fff;
+  font-family:serif;
+  font-size:46px;
+  line-height:53px;
+  margin-top:10px;
+}
+.event-name {
+  color:#0000EE;
+}
+.event-time {
+  color:#000;
+  margin-left:25px;
+}
+.room-link,
+.location-link {
+  display:block;
+  clear:both;
+}
+.room-link a,
+.location-link a {
+  font-size:20px;
+  color:#fff;
+}
+#location-name,
+#location-date {
+  display:block;
+  font-family:serif;
+  font-size:46px;
+  color:#fff;
+  line-height:normal;
+}
+
+.loc_room_name {
+  display:block;
+  font-family:serif;
+  font-size:36px;
+  color:#fff;
+  line-height:normal;
+}
+.loc-event {
+  background:#fff;
+  font-family:serif;
+  font-size:26px;
+  line-height:normal;
+  margin-top:2px;
+}
+.loc-event-name {
+  color:#0000EE;
+}
+.loc-event-time {
+  color:#000;
+  margin-left:25px;
+}
+#loc-no-events {
+  background:#fff;
+  display:block;
+  font-family:serif;
+  font-size:26px;
+  line-height:normal;
+  height:49px;
+  padding-top:15px;
+  font-weight:700;
+}
+.loc-spacer {
+  height:20px;
+}

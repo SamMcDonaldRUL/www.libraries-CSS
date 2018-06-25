@@ -1,0 +1,46 @@
+/* Styling specific to the database descriptions only */
+div.db_desc_left {
+  clear: both;
+  width: 18%;
+  float: left;
+  text-align: right;
+}
+div.db_desc_right {
+  width: 80%;
+  float: right;
+}
+
+/*START styling for the Funder section*/
+#db_thanksto .pad-top {padding-top:30px}
+#db_thanksto .pad-right {
+  float:left;
+  padding-right:30px
+}
+#db_thanksto #funder-img {float:left}
+/*END styling for the Funder section*/
+
+/*START connect 'buttons' on database description pages */
+#connect {
+  float: left;
+  padding: 0 2%;
+}
+#connect_button{
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #fff;
+  font-size: 11px;
+  font-weight:700;
+  background: #17529a;
+  padding: 4px 7px 3px 7px;
+  border: solid #999999 1px;
+  text-decoration: none;
+  letter-spacing:1.5px;
+}
+#connect_button:hover {
+  background: #cadef8;
+  text-decoration: none;
+  color:#000;
+}
+/*END connect 'buttons' on database description pages */

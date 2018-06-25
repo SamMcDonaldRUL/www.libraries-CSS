@@ -1,0 +1,232 @@
+/*styles for the ORCID page*/
+
+/*hide the page title*/
+#page-title {display:none}
+
+/*START top row styling*/
+#top-row {
+  background:url(/sites/default/files/orcid/right-background.png);
+  background-repeat: no-repeat;
+  background-position: 420px 20px;
+  margin-top: -40px;
+  padding-top: 40px;
+  margin-bottom: -40px;  
+  padding-bottom: 40px;
+}
+#orcid-logo {
+  float:left;
+  height:115px;
+  margin:10px 20px;
+}
+#ru-orcid-logo {margin:0 10px}
+#orcid-connect {  
+  float:right;
+  width:270px;
+  margin-top:40px
+}
+/*END top row styling*/
+
+/*START content tabs styling*/
+#content-tabs {width:628px}
+#tabs-container {
+  margin-top:24px;
+  font-size:16px;
+  height:1.47em;
+}
+#tabs-container div  {
+  cursor:pointer;
+  display:inline;
+  padding: 5px 25px;
+  position:relative;
+  width:25%;
+}
+#tabs-container div.picked {
+  background:#A6CE39;
+  border-radius:10px 10px 0 0;
+  color:#fff;
+  font-weight:700;
+  position:relative;
+  z-index:1;
+}
+#tabs-container div.welcome.picked {}
+#tabs-container div.why.picked {}
+#tabs-container div.orcid-rutgers.picked {}
+#tabs-container dfaq.picked {}
+/*END content tabs styling*/
+
+/*START contents container styling*/
+#contents-container {
+  border:none;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  position:relative;
+  z-index:0;
+  background:none;
+}
+.container  {
+  border-top:6px solid #A6CE39;
+  display:none;
+  padding:1.5em;
+  position:relative;
+  z-index:10;
+}
+.container.welcome {
+  border-top-left-radius:0;
+  display:block;
+  overflow:hidden;
+}
+#orcid-hub {
+  display:block;
+  margin-left: -78.17%;
+  margin-top: -13.666666666666666%;
+  margin-bottom: -75.5%;
+  width: 177.34%;
+}
+#welcome1 {
+  position: absolute;
+  margin-top: -520px;
+  font-size:14px;
+  font-weight:700;
+  color:#A6CE39
+}
+#welcome2 {
+  position: absolute;
+  margin-top: -470px;
+}
+#welcome2 a {
+  font-size:16px;
+  font-weight:700
+}
+#welcome3 {
+  position: absolute;
+  margin-top: -400px;
+  width: 260px;
+  margin-left: 340px;
+}
+.container.why {}
+#why1, #why4 {
+  font-size:14px;
+  font-weight:700;
+  color:#A6CE39;
+  padding-bottom:20px;
+}
+#why2 {
+  float:left;
+  width:46%;
+  margin-right:10px;
+}
+#why3 {
+  float:right;
+  width:50%;
+  margin-left:10px;
+}
+#why4 {
+  clear:both;
+  padding-bottom:10px
+}
+#who-uses-orcid {padding:0}
+#who-uses-orcid li {
+  list-style:none;
+  margin-bottom:5px;
+}
+.why-title {
+  font-weight:700;
+  color:#007FAC
+}
+.container.orcid-rutgers {}
+#orcid-rutgers1 {
+  font-size:14px;
+  font-weight:700;
+  color:#A6CE39;
+  padding-bottom:20px;
+}
+#orcid-rutgers2 {padding-bottom:20px}
+#orcid-rutgers2 a {
+  font-size:16px;
+  font-weight:700
+}
+#orcid-rutgers3 {}  
+.orcid-rutgers-title {
+  font-size:16px;
+  font-weight:700;
+  color:#007FAC
+}
+#orcid-rutgers4 {
+  float:left;
+  width:46%;
+  margin-right:10px;
+}  
+#orcid-rutgers5 {
+  float:right;
+  width:50%;
+  margin-left:10px;
+}
+#faq1 {
+  font-size:14px;
+  font-weight:700;
+  color:#A6CE39;
+  padding-bottom:20px;
+}
+.faq-title {  
+  font-size:16px;
+  font-weight:700;
+  color:#007FAC
+}
+#faq2 {}
+#faq3 {}
+#faq3 .faq-title {
+  display:block;
+  margin-bottom:20px
+}
+.faq3-q {
+  margin-left:20px;
+  margin-bottom:10px
+}
+.faq-q-title {
+  font-size:14px;
+  font-weight:700;
+  color:#007FAC;
+  cursor:pointer;
+  vertical-align:top;
+}
+.plus::before {
+  content: "+";
+  float: left;
+  font-size: 1.5em;
+  font-weight: 700;
+  color:#007FAC;
+  cursor:pointer;
+  margin-right: 5px;
+  width: 10px;
+}
+.minus::before {
+  content: "-";
+  float: left;
+  font-size: 1.5em;
+  font-weight: 700;
+  color:#007FAC;
+  cursor:pointer;  
+  margin-right: 5px;
+  width: 10px;
+}
+
+.faq-answer {display:none}
+/*END contents container styling*/
+
+/*START side column styling */
+#side-col {
+  border: 6px solid #A6CE39;
+  border-radius: 10px 10px 0 0;
+  background: #007FAC;
+  color: #fff;
+}
+#side-col h3 {
+  padding: 20px 20px 0;
+  color: #fff
+}
+#side-col div {
+  padding:0 20px 20px;
+}
+#side-col a:link,
+#side-col a:visited {color:#fff}
+/*END side column styling */

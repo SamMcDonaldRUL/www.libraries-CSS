@@ -1,0 +1,127 @@
+body {
+/*background-color: #ededed;*/
+background: url("../images/absurdidad_may13.png") repeat scroll 0 0 #ffffff;
+
+}
+#buttons a {
+  color: #0000FF;
+}
+span.you {
+  color: #0000FF;
+}
+#presence {
+  display: none;
+}
+#header {
+  left:0;
+  right:0;
+}
+#header h1 {
+  font-family: verdana,helvetica,arial,sans-serif;
+  line-height: 1.2em;
+}
+
+#buttons, #status {
+  /*height: 30px;
+  margin:0 1em;
+  bottom: 3.3em;*/
+  margin-bottom: -2px;
+}
+#buttons a span.sprite {
+  background-image: none;
+  margin-left: 10px;
+}
+#buttons #sounds span.sprite {
+  background-image: url("../images/sprite.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline;
+  float: left;
+  margin-right: 0;
+}
+
+#file {
+  display: none !important;
+}
+#buttons #mail span.sprite {
+  background-image: url("../images/email.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline;
+  float: left;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 3px;
+  width: 24px;
+}
+#buttons #popout span.sprite {
+  background-image:url("../images/opennew2.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline;
+  float: left;
+  height: 24px;
+  margin-left: 2px;
+  margin-right: 6px;
+  width: 24px;
+}
+#send {
+  /*bottom: 2px;
+  height: 3.5em;
+  margin:0 14px;
+  width: 270px;*/
+  margin:0;
+}
+#msg {
+  font-size: 11px;
+  height: 27px;
+  margin-top: 1.75em;
+  padding-left: 14px;
+  width: 212px;
+}
+span.me {
+  color: #FF0000;
+}
+#recv {
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding:0;
+  color: #000000;
+  margin:2px;
+  width:98%;
+}
+#send {
+  left:0;
+  right:0;
+}
+#send #msg {
+  background-color: #FFFFFF;
+  width: 93%;
+  height: 34px;
+  border: 1px solid #cccccc;
+  color: #000000;
+  resize:none;
+  margin:6px 2px 0;
+}
+@-moz-document url-prefix() {
+  #send #msg {
+    width:93%;
+    height:38px;
+  }
+}
+
+h1 {
+  color: #575859;
+}
+#header h1 {
+  display:none;
+}
+#layout {
+  border: medium none;
+  /*bottom: 4.2em;*/
+  margin: 0 0 0;
+  top: 0;
+  left:0;
+  right:0;
+}
+#send-line img {display:none;}

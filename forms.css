@@ -1,0 +1,826 @@
+/* general form styles */
+
+/* all p and li's in form..may need more elements  */
+.field-name-body p,
+.field-name-body li {
+  font-weight:400;
+  color:#555555;
+}
+legend {
+  color:#FFF;
+  background-color:#444;
+  box-shadow: 1px 0px 1px #CCCCCC;
+  margin-left:-25px;
+  /* margin-top:-32px; */
+  min-width:450px;
+  height:2.5em;
+}
+.fieldset-legend {
+  font-size:1.1em;
+  padding:0.5em;
+  display:block;
+  font-weight:700;
+  /* text-shadow: 0 1px 1px #666666; */
+}
+fieldset {
+  /* background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.05, #EDF0ED),color-stop(1, #FFFFFF),color-stop(1, #FFFFFF)); */
+  /* background-image: -o-linear-gradient(bottom, #E2E2E2 5%, #FFFFFF 100%, #FFFFFF 100%); */
+  /* background-image: -moz-linear-gradient(bottom, #E2E2E2 5%, #FFFFFF 100%, #FFFFFF 100%); */
+  /* background-image: -webkit-linear-gradient(bottom, #E2E2E2 5%, #FFFFFF 100%, #FFFFFF 100%); */
+  /* background-image: -ms-linear-gradient(bottom, #E2E2E2 5%, #FFFFFF 100%, #FFFFFF 100%); */
+  /* background-image: linear-gradient(to bottom, #E2E2E2 5%, #FFFFFF 100%, #FFFFFF 100%); */
+  border:1px solid #CCCCCC;
+  padding:1.5em;
+  /* margin-top:3.5em; */
+}
+.webform-client-form p {color:#333333;}
+label {
+  color:#333333;
+  font-weight:400;
+}
+
+fieldset.captcha {
+  position:relative;
+  background-image:none !important;
+}
+fieldset.captcha legend  {
+  background-color:#FFF;
+  width:6em;
+  min-width:6em;
+  box-shadow: 0px 0 0px #FFF;
+  position:absolute;
+  left:62px;
+  /*top:39px;*/
+}
+fieldset.captcha legend span.fieldset-legend {
+  color:#555555;
+  font-weight:700;
+  text-transform:capitalize !important;
+  text-shadow:none;
+}
+fieldset.captcha .fieldset-description {color:#555555;}
+fieldset.captcha .fieldset-wrapper {
+  margin-left:1.8em;
+  margin-top:2em;
+}
+fieldset.captcha .form-item-captcha-response {
+  background-color:#E6E6E6;
+  border:1px solid #CCCCCC;
+  margin-top:1em;
+  font-weight:700;
+  color:#555555;
+  padding:.4em 1em .4em 1em;
+  margin-right:3em;
+}
+fieldset.captcha .description {font-size:1em;}
+
+#edit-actions {
+  display:block;
+  float:right;
+  height:3em;
+  width:12em;
+  border:0px solid green;
+  background-color:#E6E6E6;
+  margin-right:5.5em;
+}
+#edit-submit {
+  background-clip: padding-box;
+  background-color: #0058B7;
+  background: rgba(0, 88, 183, 1);
+  background-image: -moz-linear-gradient(center top , #FFFFFF 0%, #E2E2E2 1%, #1859B7 59%, #1859B7 50%, #1859B7 100%);
+  border-color: #1859B7;
+  box-shadow: 0 0 0.1em 1px rgba(255, 255, 255, 0.36) inset;
+  text-shadow: 0 1px 1px #001B38;
+  color:#FFF;
+  font-weight:700;
+  width:10em;
+  float:right;
+  position:relative;
+  margin-left:2em;
+  margin-top:.8em;
+  margin-right:2em;
+}
+
+/* ====================================  */
+
+fieldset.collapsible {background:none;}
+fieldset.collapsible legend {background:none;background-color:none;box-shadow:none;}
+fieldset.collapsible legend span.fieldset-legend a.fieldset-title {display:block;margin-top:-6px;}
+fieldset.collapsed {background:none;}
+
+.webform-client-form  input {position:absolute;left:22em;width:45em;}
+.form-select {/*position:absolute;*/left:22em;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari and Chrome */
+.form-select {padding-right: 1em;}
+}
+
+.form-type-radio {display:inline;color:green;border:0px solid red;width:12em;margin-right:3em;}
+input.form-radio  {position:relative;display:inline;color:blue;border:0px solid black;left:.5em;;width:1em;margin-bottom:2px;}
+label.option {padding-left:1em}
+html.js input.webform-calendar {width:1.4em;left:20em;margin-left:.2em;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* Safari and Chrome */
+  html.js input.webform-calendar {
+    width:1.4em;
+    left:18em;
+    margin-left:.2em;
+  }
+}
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  -moz-box-sizing: border-box;
+  background-clip: padding-box;
+  background-color: #FFFFFF;
+  border-color: #CCCCCC #CCCCCC #CCCCCC;
+  border-image: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  color: #000000;
+  font-family: Arial,sans-serif;
+  font-size: 13px;
+  outline: 0 none;
+  padding: 2px 3px;
+}
+
+.form-textarea-wrapper textarea {
+  width:45em;
+  display:inline;
+  margin-left:22em;
+  /* margin-top:-2.1em; */
+  /* background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.05, #E2E2E2),color-stop(1, #FFFFFF),color-stop(1, #FFFFFF)); */
+  /* background-image: -o-linear-gradient(bottom, #E2E2E2 5%, #FFFFFF 100%, #FFFFFF 100%); */
+  /* background-image: -moz-linear-gradient(bottom, #E2E2E2 5%, #FFFFFF 100%, #FFFFFF 100%); */
+  /* background-image: -webkit-linear-gradient(bottom, #E2E2E2 5%, #FFFFFF 100%, #FFFFFF 100%); */
+  /* background-image: -ms-linear-gradient(bottom, #E2E2E2 5%, #FFFFFF 100%, #FFFFFF 100%); */
+  /* background-image: linear-gradient(to bottom, #E2E2E2 5%, #FFFFFF 100%, #FFFFFF 100%); */
+}
+.grippie {
+  /* width:44.9em; */
+  /* margin-left:22em; */
+  width:585px;
+  margin-left:265px
+}
+
+/* for file uploads..like large print form  */
+.form-managed-file .form-file   {left:0;position:relative;width:16em;border:0px solid red;}
+.form-managed-file .form-submit {left:0;position:relative;width:6em;border:0px solid green;}
+
+/* ====================================  */
+/* all below is layout  */
+
+.webform-datepicker {position:absolute;left:16.8em;}
+.webform-datepicker .form-select{position:relative;left:5.2em;}
+.webform-calendar {margin-top:0em;margin-left:-3em;}
+
+@-moz-document url-prefix() {
+  /* Firefox */
+  .webform-calendar {margin-top:-2em;}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari and Chrome */
+.webform-calendar {margin-top:-2em;}
+}
+
+/* fieldsets change the calculation for the width of the labels */
+fieldset fieldset .form-type-radio label{width:12em;}
+fieldset fieldset fieldset .form-type-radio label{width:10em;}
+
+fieldset fieldset .form-type-checkbox label{width:12em;}
+fieldset fieldset fieldset .form-type-checkbox label{width:10em;}
+
+/* fieldsets change the calculation for the left edge of the field */
+fieldset .webform-datepicker {position:absolute;left:17em;}
+
+/* conditional fieldset adjustment - used on reserve form,vha, new hires etc. */
+#webform-component-contact-us{border:none;}
+#webform-component-contact-us legend span.fieldset-legend{height:0;background-position:5px 40%;}
+
+/* fix captcha placement */
+fieldset.captcha legend span.fieldset-legend{padding-left:0;}
+#edit-captcha-response{position:relative;left:0;width:3em;}
+
+/* because submit button was way down in the footer */
+#edit-actions{display:block;margin-bottom:4em;}
+
+/* = = = = = = = = = = = = = = = = = = = = = =  */
+/* form/node specific styles */
+
+/*  node-webform-2372   /forms/reserves-form-all-test */
+#node-webform-2372 .form-textarea-wrapper textarea {margin-left:19em;margin-top:.2em;}
+#node-webform-2372 .grippie {margin-left:19em;width:44.9em;}
+#node-webform-2372 #edit-submitted-course-information-special-instructions{margin-left:20.5em;margin-top:-2.2em;}
+
+#node-webform-2372 #webform-component-contact-us .fieldset-title {text-shadow:none;}
+#webform-component-course-information--special-instructions div div.grippie {margin-left:20.5em;}
+#node-webform-2372 #edit-submitted-course-information-reserves-additions  {background-color: #E2E2E2;    display: inline;    left: 22em;    margin-top: -2.4em;    position: absolute;}
+#node-webform-2372 #edit-submitted-course-information-semester-needed  {background-color: #E2E2E2;    display: inline;    left: 22em;    margin-top: -2.4em;    position: absolute;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-1-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-2-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-3-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-4-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-5-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-6-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-7-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-8-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-9-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-10-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-11-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-12-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-13-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-14-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-15-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-16-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-17-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-18-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-19-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+#node-webform-2372 #edit-submitted-reserves-requested-reserve-item-20-e-book-acceptable {display:inline;left:22em;position:absolute;background-color:#E2E2E2;margin-top:-2.2em;}
+
+/*  node-webform-2378   Visual History Archive Video Cache Request */
+#node-webform-2378 #edit-submitted-need-comments {margin-left:20.5em;}
+#node-webform-2378 #webform-component-need--comments div div.grippie {margin-left:20.5em;}
+#node-webform-2378 #webform-component-need--comments .description {margin-left:24.5em;}
+
+/*  node-webform-2383   Media Materials - Booking Form   old */
+#node-webform-2383 .webform-component-fieldset .fieldset-wrapper .form-textarea-wrapper textarea {margin-top:0;margin-left:20.5em;}
+#node-webform-2383 .webform-component-fieldset .fieldset-wrapper .form-textarea-wrapper  div.grippie {margin-left:20.5em;}
+#node-webform-2383 .webform-datepicker {left:16.9em;}
+
+/*  node-webform-3065   Media Materials - Booking Form  new july 2014 */
+#node-webform-3065 .webform-component-fieldset .fieldset-wrapper .form-textarea-wrapper textarea {margin-top:0;margin-left:20.5em;}
+#node-webform-3065 .form-textarea-wrapper textarea {margin-top:0;}
+#node-webform-3065 .webform-component-fieldset .fieldset-wrapper .form-textarea-wrapper  div.grippie {margin-left:20.5em;}
+#node-webform-3065 .webform-datepicker {left:16.9em;}
+#node-webform-3065 .webform-component-date label {margin-left:2em;}
+#node-webform-3065 .webform-component-radios    label {display:block;padding-bottom:6em;width:17em;}
+#node-webform-3065 .webform-component-radios div.form-radios                {display:block;margin-left:20em;margin-top:-9.5em;}
+#node-webform-3065 .webform-component-radios div.form-radios          label {display:inline;padding-bottom:0em;width:8em;}
+/* some of the above only works because radios are only used one way (repeatedly) so I can use that general class..same for date  */
+
+/*  node-webform-2391   Media Center Reserves Form  -old  */
+#node-webform-2391 #webform-component-reserves-course-information--reserves-additions label {width:14em;height:3em;display:block;border:0px solid red;}
+#node-webform-2391 #webform-component-reserves-course-information--reserves-additions #edit-submitted-reserves-course-information-reserves-additions{background-color: #E2E2E2;display:inline;left:22em;margin-top:-2.4em;position:absolute;}
+#node-webform-2391 #edit-submitted-reserves-course-information-reserves-additions label {display:inline;}
+#node-webform-2391 #edit-submitted-lending-period-reserves-special-instructions {margin-left:20.5em;}
+#node-webform-2391 #webform-component-lending-period--reserves-special-instructions div .grippie {margin-left:20.5em;}
+#node-webform-2391 #webform-component-media-reserves-requested textarea {margin-top:0;margin-left:20em;}
+#node-webform-2391 #webform-component-media-reserves-requested div .grippie {margin-left:20em;}
+#node-webform-2391 #webform-component-media-reserves-requested fieldset div fieldset div div.webform-component-radios div.form-radios {background-color: #E2E2E2;display:inline;left:23.3em;margin-top:-2.4em;position:absolute;}
+
+/*  node-webform-3075   Media Center Reserves Form   */
+#node-webform-3075 .form-textarea-wrapper textarea {margin-top:0;}
+#node-webform-3075 .webform-component-radios .form-radios {margin-left:14.9em;}
+#node-webform-3075 .webform-container-inline div, .webform-container-inline div.form-item {display:inline;left:10.8em;}
+#node-webform-3075 #webform-component-reserves-course-information--reserves-additions label {    border: 0 solid #FF0000;    display:block;    height: 3em;    width: 14em;}
+#node-webform-3075 #webform-component-reserves-course-information--reserves-additions #edit-submitted-reserves-course-information-reserves-additions {    background-color: #E2E2E2;    display: inline;    left: 7.5em;    margin-top: -3em;    position: absolute;}
+#node-webform-3075 #webform-component-reserves-course-information--reserves-additions div label {display:inline;}
+#node-webform-3075 .webform-container-inline div.description {     display: block;}
+#node-webform-3075 #edit-submitted-lending-period-reserves-special-instructions {margin-left: 20.5em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-1--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-1--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-1-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-1-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-1-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #edit-submitted-reserves-course-information-reserves-number-of-students {width:5em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-2--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-2--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-2-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-2-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-2-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-3--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-3--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-3-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-3-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-3-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-4--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-4--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-4-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-4-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-4-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-5--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-5--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-5-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-5-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-5-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-6--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-6--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-6-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-6-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-6-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-7--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-7--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-7-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-7-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-7-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-8--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-8--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-8-notified background-color:#E2E2E2;{margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-8-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-8-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-9--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-9--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-9-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-9-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-9-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-10--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-10--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-10-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-10-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-10-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-11--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-11--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-11-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-11-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-11-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-12--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-12--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-12-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-12-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-12-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-13--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-13--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-13-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-13-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-13-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-14--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-14--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-14-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-14-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-14-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-15--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-15--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-15-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-15-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-15-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-16--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-16--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-16-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-16-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-16-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-17--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-17--notified div.form-radios {display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-17-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-17-notified label {background-color:#E2E2E2;display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-17-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-18--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-18--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-18-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-18-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-18-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-19--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-19--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-19-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-19-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-19-copy-source {background-color:#E2E2E2}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-20--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3075 #webform-component-media-reserves-requested--reserve-item-20--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-20-notified {background-color:#E2E2E2;margin-top:12em;left:14.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-20-notified label {display:inline;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-20-copy-source {background-color:#E2E2E2}
+
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-1-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-2-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-3-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-4-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-5-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-6-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-7-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-8-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-9-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-10-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-11-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-12-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-13-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-14-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-15-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-16-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-17-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-18-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-19-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+#node-webform-3075 #edit-submitted-media-reserves-requested-reserve-item-20-is-this-reserve {background-color: #e2e2e2;margin-left:13.9em;}
+
+/*  node-webform-2393   Dana Media Center Reserves Form -old  */
+#node-webform-2393 #webform-component-reserves-course-information--reserves-additions label {width:14em;height:3em;display:block;border:0px solid red;}
+#node-webform-2393 #webform-component-reserves-course-information--reserves-additions #edit-submitted-reserves-course-information-reserves-additions{background-color: #E2E2E2;display:inline;left:22em;margin-top:-2.4em;position:absolute;}
+#node-webform-2393 #edit-submitted-reserves-course-information-reserves-additions label {display:inline;}
+#node-webform-2393 #edit-submitted-lending-period-reserves-special-instructions {margin-left:20.5em;}
+#node-webform-2393 #webform-component-lending-period--reserves-special-instructions div .grippie {margin-left:20.5em;}
+#node-webform-2393 #webform-component-media-reserves-requested textarea {margin-top:0;margin-left:20em;}
+#node-webform-2393 #webform-component-media-reserves-requested div .grippie {margin-left:20em;}
+#node-webform-2393 #webform-component-media-reserves-requested fieldset div fieldset div div.webform-component-radios div.form-radios {background-color: #E2E2E2;display:inline;left:23.3em;margin-top:-2.4em;position:absolute;}
+
+/*  node-webform-3074   Dana Media Center Reserves Form   */
+#node-webform-3074 .form-textarea-wrapper textarea {margin-top:0;}
+#node-webform-3074 .webform-component-radios .form-radios {margin-left:14.5em;}
+#node-webform-3074 .webform-container-inline div, .webform-container-inline div.form-item {display:inline;left:10.3em;}
+#node-webform-3074 #webform-component-reserves-course-information--reserves-additions label {    border: 0 solid #FF0000;    display:block;    height: 3em;    width: 14em;}
+#node-webform-3074 #webform-component-reserves-course-information--reserves-additions #edit-submitted-reserves-course-information-reserves-additions {    background-color: #E2E2E2;    display: inline;    left: 7.5em;    margin-top: -3em;    position: absolute;}
+#node-webform-3074 #webform-component-reserves-course-information--reserves-additions div label {display:inline;}
+#node-webform-3074 .webform-container-inline div.description {     display: block;}
+#node-webform-3074 #edit-submitted-lending-period-reserves-special-instructions {margin-left: 20.5em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-1--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-1--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-1-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-1-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-1-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #edit-submitted-reserves-course-information-reserves-number-of-students {width:5em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-2--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-2--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-2-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-2-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-2-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-3--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-3--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-3-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-3-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-3-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-4--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-4--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-4-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-4-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-4-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-5--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-5--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-5-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-5-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-5-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-6--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-6--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-6-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-6-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-6-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-7--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-7--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-7-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-7-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-7-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-8--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-8--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-8-notified background-color:#E2E2E2;{margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-8-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-8-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-9--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-9--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-9-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-9-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-9-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-10--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-10--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-10-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-10-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-10-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-11--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-11--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-11-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-11-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-11-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-12--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-12--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-12-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-12-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-12-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-13--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-13--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-13-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-13-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-13-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-14--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-14--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-14-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-14-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-14-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-15--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-15--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-15-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-15-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-15-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-16--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-16--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-16-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-16-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-16-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-17--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-17--notified div.form-radios {display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-17-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-17-notified label {background-color:#E2E2E2;display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-17-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-18--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-18--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-18-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-18-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-18-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-19--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-19--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-19-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-19-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-19-copy-source {background-color:#E2E2E2}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-20--notified label {display:block;padding-bottom:0em;width:17em;}
+#node-webform-3074 #webform-component-media-reserves-requested--reserve-item-20--notified div.form-radios {background-color:#E2E2E2;display:inline;left:10.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-20-notified {background-color:#E2E2E2;margin-top:12em;left:14.5em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-20-notified label {display:inline;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-20-copy-source {background-color:#E2E2E2}
+
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-1-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-2-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-3-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-4-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-5-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-6-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-7-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-8-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-9-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-10-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-11-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-12-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-13-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-14-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-15-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-16-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-17-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-18-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-19-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+#node-webform-3074 #edit-submitted-media-reserves-requested-reserve-item-20-is-this-reserve {background-color: #e2e2e2;margin-left:13.6em;}
+
+/*  node-webform-2395   streaming media  fix one long label problem*/
+#node-webform-2395 #webform-component-url label {width:14em;display:block;}
+#node-webform-2395 #edit-submitted-url {margin-top:-5em;}
+
+/*  node-webform-2396   Streaming Media Reserve Request Form   */
+#node-webform-2396 #webform-component-course-information--additions-reserves label {width:14em;height:3em;display:block;border:0px solid red;}
+#node-webform-2396 #webform-component-course-information--additions-reserves #edit-submitted-course-information-additions-reserves {background-color: #E2E2E2;display:inline;left:22em;margin-top:-3.4em;position:absolute;}
+#node-webform-2396 #webform-component-course-information--additions-reserves #edit-submitted-course-information-additions-reserves label {display:inline;}
+#node-webform-2396 #webform-component-lending-period--semester-needed #edit-submitted-lending-period-semester-needed {background-color: #E2E2E2;display:inline;left:22em;margin-top:-3.4em;position:absolute;}
+#node-webform-2396 #webform-component-lending-period--semester-needed #edit-submitted-lending-period-semester-needed  label {display:inline;margin-top:2.4em;}
+#node-webform-2396 #webform-component-reserves-requested div fieldset div div textarea {margin-top:0;margin-left:19em;}
+#node-webform-2396 #webform-component-reserves-requested div fieldset div div .grippie {margin-top:0;margin-left:19em;}
+#node-webform-2396 #webform-component-reserves-requested div fieldset div div select {left:4.2em;}
+#node-webform-2396 #webform-component-reserves-requested div fieldset div div.form-radios {background-color: #E2E2E2;display:inline;left:22.3em;margin-top:-2.4em;position:absolute;}
+#node-webform-2396 #webform-component-reserves-requested div fieldset div div.form-radios label {display:inline;}
+/* cannot make special instruction text area have a negative top margin without 20 rules.as there are 2 text areas in this fieldset
+could make them both fulll-width if desired
+ */
+
+/*  node-webform-2397   Monograph/Firm Order Request*/
+#node-webform-2397 #webform-component-notes--notified-barcode label {width:14em;height:6em;display:block;border:0px solid red;}
+#node-webform-2397 #edit-submitted-need-comments {margin-top:-6em;}
+#node-webform-2397 #webform-component-notes--notified-barcode .description {margin-left:24.5em;margin-top:-4.5em;width:36em;display:block;}
+#node-webform-2397 #webform-component-need--comments #description {margin-left:20em;}
+#node-webform-2397 div.form-type-radio {border:0px solid red;display:block;width:25em;}
+#node-webform-2397 #edit-submitted-notes-notified-barcode {margin-top:-6.5em;}
+#node-webform-2397 #edit-submitted-notes-bookplate {margin-left:20.5em}
+#node-webform-2397 #webform-component-notes--bookplate div .grippie {margin-left:20.5em}
+#node-webform-2397 #edit-submitted-copy-paste-bibliographic-information-here {margin-top:0em;}
+
+/*  node-webform-2398   Holdings Project Request Form  */
+#node-webform-2398 #webform-component-project-details textarea {margin-top:0em;}
+#node-webform-2398 #webform-component-basic-information--project-name .description {margin-left:24em;}
+#node-webform-2398 #webform-component-project-details--where-currently-housed .description {margin-left:26em;}
+
+/*  node-webform-2400  New Account/Change of accounts */
+/*  lots of long labels..move'em all over for this form */
+#node-webform-2400 .form-select {position:absolute;left:28em;}
+#node-webform-2400 .webform-datepicker {position:absolute;left:25.8em;}
+#node-webform-2400 .webform-datepicker .form-select{position:relative;left:0;}
+/*  move a pair right */
+#edit-submitted-new-hire-setup-information-zimbra-yes-if-yes-please-supply-user-netid{left:22em;}
+#edit-submitted-new-hire-setup-information-zimbra-yes-email-alias-wanted{left:22em;}
+
+/* node-webform-2401  exit procedure   one long label moved input to the right 4em*/
+#edit-submitted-sirsi-workflows-sirsi-workflows-username-if-applicable{left:22em;}
+#edit-submitted-website-member-of-committees-forums-listservs-or-website-projects {margin-top:.5em;}
+
+#node-webform-2401 input.webform-calendar {position:absolute;}
+
+/* node-webform-2420 Selector Funds Order Form */
+#node-webform-2420 #webform-component-cost--paid-subscription-ongoing--paid-subscription-ongoingprice label {width:14em;display:block;}
+#node-webform-2420 #webform-component-cost--paid-subscription-ongoing--paid-subscription-ongoingprice input {margin-top:-4em;}
+
+/* node-webform-2422 Free Electronic Access Request Form */
+#node-webform-2422 #webform-component-general-infomation--title-of-print-equivalent-if-available label {width:14em;display:block;}
+#node-webform-2422 #webform-component-general-infomation--title-of-print-equivalent-if-available input {margin-top:-4em;}
+#node-webform-2422 #webform-component-source--enter-expiration-date-of-free-access-or-depository-item-number {}
+#node-webform-2422 #webform-component-source--enter-expiration-date-of-free-access-or-depository-item-number label {width:14em;display:block;}
+#node-webform-2422 #webform-component-source--enter-expiration-date-of-free-access-or-depository-item-number input {margin-top:-4em;}
+
+/* styling for the feedback (/feedback) form */
+#webform-client-form-2142 #webform-component-comments-suggestions-or-corrections {
+  width:685px;
+}
+.webform-client-form .form-actions input{
+  left:0;
+}
+
+/* styling for the request-open-access-policy-presentation form */
+/* #webform-client-form-2579 .form-textarea-wrapper{width:48%;margin-left:18em;margin-top:-2em;}  */
+
+/* styling for smith aal form */
+#webform-client-form-2906 #webform-component-status {height:3.5em;}
+#webform-client-form-2906 #edit-submitted-status-other {margin-top:1.2em;}
+
+/* styling for smith classes registration form */
+#webform-client-form-2907 #webform-component-status {height:3.5em;}
+#webform-client-form-2907 #edit-submitted-status-other {margin-top:1.2em;}
+#webform-client-form-2907 .form-select {font-size:13px;width:34.7em;}
+#webform-client-form-2907 #webform-component-select-classes .form-select {font-size:13px;width:34.7em;left:20em;}
+
+/* styling for smith University Patron Registration form */
+#webform-client-form-2909 #webform-component-status {height:3.5em;}
+#webform-client-form-2909 #edit-submitted-status-other {margin-top:1.2em;}
+
+#webform-client-form-2909 #webform-component-institution {height:3.5em;}
+#webform-client-form-2909 #edit-submitted-institution-other {margin-top:1.2em;}
+
+/* styling for smith Volunteer Faculty Registration Form */
+#webform-client-form-2910 .form-text {left: 22em;}
+#webform-client-form-2910 #edit-captcha-response {left: 0em;}
+#webform-client-form-2910 #edit-submitted-describe-volunteer {margin-top:0em;}
+
+/* styling for smith Library Instruction Request Form */
+#webform-client-form-2911 #webform-component-students{height:3.5em;}
+#webform-client-form-2911 #edit-submitted-students-other {margin-top:1.2em;}
+#webform-client-form-2911 #edit-submitted-classroom-internet-available {background-color: #E2E2E2;margin-left:10em;;width:40em;display:inline;}
+
+#webform-client-form-2911  #webform-component-date-and-time-requested .webform-datepicker {margin-left:-1.1em;}
+#webform-client-form-2911  #webform-component-instructional-needs textarea {margin-top:0;}
+
+/* styling for smith Recommendation for Book Purchase Form */
+#webform-client-form-2912 #edit-submitted-please-notify-me-select-1 {margin-top:.2em;}
+#webform-client-form-2912 #edit-submitted-please-notify-me-select-2 {margin-top:.2em;}
+
+/* styling for smith Recommendation for journal Purchase Form */
+#webform-client-form-2914 #edit-submitted-please-notify-me-when-publication-is-ready-for-circulation-select-1  {margin-top:.2em;}
+#webform-client-form-2914 #edit-submitted-please-notify-me-when-publication-is-ready-for-circulation-select-2  {margin-top:.2em;}
+
+/* styling for rwj classes registration Form */
+#webform-client-form-2899 #webform-component-status {height:3.5em;}
+#webform-client-form-2899 #edit-submitted-status-other {margin-top:1.2em;}
+#webform-client-form-2899 .form-select {font-size:13px;width:34.7em;}
+#webform-client-form-2899 #webform-component-select-classes .form-select {font-size:13px;width:34.7em;left:20em;}
+
+/* node 2609  robseson reserve form  */
+#webform-client-form-2609 .form-textarea-wrapper textarea {margin-left:19em;}
+#webform-client-form-2609 .grippie {margin-left:19em;}
+/* can probably do the 2 lines above contextually ..they need 3 less due to the nested fieldsets */
+#webform-client-form-2609 #edit-submitted-course-information-semester {display:inline;left:22em;position:absolute;margin-top:0em;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-1-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-2-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-3-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-4-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-5-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-6-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-7-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-8-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-9-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-10-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-11-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-12-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-13-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-14-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-15-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-16-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-17-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-18-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-19-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 #edit-submitted-reserves-requested-reserve-item-20-e-book-acceptable-if-available {display:inline;left:22em;position:absolute;background-color:#E2E2E2;}
+#webform-client-form-2609 .webform-container-inline div.description {width:40em;margin-left:24.5em;margin-top:3px;}
+
+/* node 2789 - wireless issues reporting form  */
+#node-webform-2789 .field-name-body p, .field-name-body li {color:#333;font-weight:400}
+#webform-client-form-2789 input {}
+#webform-client-form-2789 .form-textarea-wrapper textarea {margin-top:0;margin-left:20.5em}
+#webform-client-form-2789 .grippie {margin-left:20.5em}
+#webform-client-form-2789 .webform-component-webform_time .webform-container-inline {left:22em;position:absolute}
+#webform-client-form-2789 .hour, #webform-client-form-2789 .minute {left:0;position:relative}
+#webform-client-form-2789 .form-item-submitted-issues-what-action-was-being-performed-when-disruption-occured-other {padding-bottom:1em}
+#webform-client-form-2789 #edit-submitted-issues-were-you-able-to-connect-to-a-wireless-signal,
+#webform-client-form-2789 #edit-submitted-issues-was-the-connection-slow-or-sluggish,
+#webform-client-form-2789 #edit-submitted-issues-were-you-able-to-log-in-using-your-netid {left:31.1em;position:absolute}
+#webform-client-form-2789 #edit-submitted-issues-what-action-was-being-performed-when-disruption-occured-select {}
+#webform-client-form-2789 #edit-submitted-issues-what-action-was-being-performed-when-disruption-occured-select-1,
+#webform-client-form-2789 #edit-submitted-issues-what-action-was-being-performed-when-disruption-occured-select-2,
+#webform-client-form-2789 #edit-submitted-issues-what-action-was-being-performed-when-disruption-occured-select-3  {left:8.8em}
+#webform-client-form-2789 #edit-submitted-issues-ruwireless-issues-what-action-was-being-performed-when-disruption-occured-select input,
+#webform-client-form-2789 #edit-submitted-issues-ruwireless-secure-issues-what-action-was-being-performed-when-disruption-occured-select input {left:10.3em}
+#webform-client-form-2789 #webform-component-issues--ruwireless-issues .form-radios,
+#webform-client-form-2789 #webform-component-issues--ruwireless-secure-issues .form-radios {left:32.6em;position:absolute}
+#webform-client-form-2789 .fieldset-wrapper .fieldset-wrapper div.form-radios {left:32.6em;position:absolute;}
+
+#webform-client-form-2789 .form-item-submitted-issues-mobile-device-other {padding-bottom:3em;}
+#webform-client-form-2789 .form-item-submitted-issues-ruwireless-issues-what-action-was-being-performed-when-disruption-occured-other {height:1em;}
+#webform-client-form-2789 .form-item-submitted-issues-ruwireless-secure-issues-what-action-was-being-performed-when-disruption-occured-other {height:1em;}
+
+/*  node-webform-3037   streaming media  fix one long label problem*/
+#node-webform-3037 #webform-component-url label {width:14em;display:block;}
+#node-webform-3037 #edit-submitted-url {margin-top:-5em;}
+
+/* node 3073 - large format printing form  */
+#webform-client-form-3073 .form-radios                                   {left:7em;position:relative;}
+#webform-client-form-3073 .form-managed-file                             {left:15em;position:relative;}
+#webform-client-form-3073 #edit-submitted-file-attachments-poster-2-file {left:16em;position:relative;}
+#webform-client-form-3073 #edit-submitted-file-attachments-poster-3-file {left:16em;position:relative;}
+/* the required fields with a * throw everything off 1 em */
+#webform-client-form-3073 .webform-container-inline .description {left:23em;position:relative;}
+#webform-client-form-3073 .form-number                           {width:3em;}
+#webform-client-form-3073 #edit-submitted-will-be-paying-by      {left:11.3em;}
+#webform-client-form-3073 #edit-submitted-file-attachments-poster-2-paper-type-for-print {left:7.8em;}
+#webform-client-form-3073 #edit-submitted-file-attachments-poster-3-paper-type-for-print {left:7.8em;}
+
+#webform-client-form-3073 .form-managed-file .ajax-processed {display:none;}
+/* hide upload button..multi ajax attempts results in captcha error. files get uploaded upon submit anyhow */
+#webform-client-form-3073 .form-managed-file .form-file   {left:0;position:relative;width:46em;border:0px solid red;}
+/* make wider since hid upload button */
+
+/*Digital Humanities Lab Signup form - yl 5/27/15*/
+#webform-client-form-6017 .webform-component-webform_time div.webform-container-inline {position:absolute;left:22em}
+#webform-client-form-6017 .webform-component-webform_time div.webform-container-inline select.hour.form-select,
+#webform-client-form-6017 .webform-component-webform_time div.webform-container-inline select.minute.form-select {position:inherit !important;}{position:inherit !important;}
+#webform-client-form-6017 #edit-submitted-time-ampm div {margin-right:0;}
+#edit-submitted-description-of-project-research {margin-top:0.2em}
+
+/* node 6021 - New hire*/
+#webform-client-form-6021 #edit-submitted-basic-info-type {position:absolute;left:22em;}
+#webform-client-form-6021 #edit-submitted-basic-info-status {position:absolute;left:22em;}
+#webform-client-form-6021 #edit-submitted-software-illiad {position:absolute;left:23em;}
+#webform-client-form-6021 #edit-submitted-software-oclc-connexion {position:absolute;left:23em;}
+#webform-client-form-6021 #edit-submitted-software-relais {position:absolute;left:23em;}
+#webform-client-form-6021 #edit-submitted-software-sirsi-workflows {position:absolute;left:23em;}
+#webform-client-form-6021 #edit-submitted-rulmail-account-needed-install-outlook {position:absolute;left:23em;}
+
+/* node 16215 - Systematic Review Service  */
+#webform-client-form-6025 .form-type-radio {margin-right:0;}
+
+#webform-client-form-6025 #edit-submitted-status-select {left: 16.5em;position: relative}
+#webform-client-form-6025 .select-or-other {margin-bottom:3em;display:block;}
+#webform-client-form-6025 #edit-submitted-status-other {margin-top:2em;}
+
+#webform-client-form-6025 #edit-submitted-home-campus-select {left: 12.5em;position: relative}
+#webform-client-form-6025 #edit-submitted-home-campus-other {margin-top:2em;}
+
+#webform-client-form-6025 #webform-component-main-author label {width: 15em;display: inline-block;}
+#webform-client-form-6025 #edit-submitted-main-author {left:5.5em;position:relative;}
+#webform-client-form-6025 #edit-submitted-main-author div.form-item-submitted-main-author label {width:2em;}
+
+#webform-client-form-6025 #webform-component-approved label {width: 15em;display: inline-block;}
+#webform-client-form-6025 #edit-submitted-approved {left:5.5em;position:relative;}
+#webform-client-form-6025 #edit-submitted-approved div.form-item-submitted-approved label {width:2em;}
+
+#webform-client-form-6025 #webform-component-deadline label {width: 15em;display: inline-block;}
+#webform-client-form-6025 #webform-component-deadline .description {margin-top:-1.5em;}
+
+#webform-client-form-6025 #webform-component-approved-by-advisor label {width: 15em;display: inline-block;}
+#webform-client-form-6025 #edit-submitted-approved-by-advisor {left:5.5em;position:relative;}
+#webform-client-form-6025 #edit-submitted-approved-by-advisor div.form-item-submitted-approved-by-advisor label {width:2em;}
+#webform-client-form-6025 .form-textarea-wrapper textarea {background-image:none;}
+
+#webform-client-form-6025 #edit-submitted-reason-for-the-systematic-review-select {display:inline-block;left:4.2em;position:relative}
+#webform-client-form-6025 #edit-submitted-reason-for-the-systematic-review {display:inline-block;left:4.2em;position:relative}
+#webform-client-form-6025 #edit-submitted-reason-for-the-systematic-review-other {margin-top:2em;}
+
+/*START public events calendar submission form - yl 2/18/16*/
+#webform-client-form-6458.webform-client-form input {position:initial;left:auto;width:auto;}
+#webform-client-form-6458.webform-client-form input#edit-submit {width:10em}
+#webform-client-form-6458 #edit-submitted-title {margin-left:10px}
+#webform-client-form-6458 #edit-submitted-start-date-time-start-time-hour {position:relative;}
+#webform-client-form-6458 #edit-submitted-event-details-event-location {-webkit-column-count:3;-moz-column-count:3;column-count:3;}
+#webform-client-form-6458 .form-textarea-wrapper textarea {background:none;display:initial;margin:0;width:100%}
+#webform-client-form-6458 .grippie {margin:0; width:100%}
+#webform-client-form-6458 .form-select {left:auto;position:initial}
+#webform-client-form-6458 .webform-calendar {margin:0}
+#webform-client-form-6458 .form-type-radio {margin:0}
+#webform-client-form-6458 label.option {padding:0}
+#webform-client-form-6458 fieldset .webform-datepicker {left:initial;position:initial}
+#webform-client-form-6458 #edit-submitted-contact-info-email {margin-left:2px}
+#webform-client-form-6458 .form-managed-file .ajax-processed {display:none}
+#webform-client-form-6458 .form-select {left:auto;position:relative;}
+#webform-client-form-6458 label.option {padding-left:1.5em;}
+#webform-client-form-6458 #edit-submitted-event-details-event-location {-webkit-column-count:3;-moz-column-count:3;column-count:2;}
+#webform-client-form-6458 .form-item-submitted-start-date-time-start-time-ampm label {padding-left:0;}
+#webform-client-form-6458 .form-item-submitted-end-date-time-end-time-ampm label {padding-left:0;}
+#webform-client-form-6458 fieldset .webform-datepicker {left: relative;}
+#webform-client-form-6458 #webform-component-start-date-time--event-start-date > label {display:inline-block;width:10em;}
+#webform-client-form-6458 #webform-component-start-date-time--start-time   > label {display:inline-block;width:10em;}
+#webform-client-form-6458 #webform-component-end-date-time--event-end-date > label {display:inline-block;width:10em;}
+#webform-client-form-6458 #webform-component-end-date-time--end-time       > label {display:inline-block;width:10em;}
+/*END public events calendar submission form - yl 1/18/16*/

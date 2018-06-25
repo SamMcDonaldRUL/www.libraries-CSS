@@ -1,0 +1,13 @@
+.views-field-field-library-image {
+  float:left;
+  width:50%;
+}
+.views-field-field-library-image img { 
+  width:100%;
+  height:100%;
+}
+.views-field-field-google-maps-link-1 {
+  float:left;
+  padding:0 0 0 10px;
+  width:45%;
+}

@@ -1,0 +1,314 @@
+/*styles for events content type and events listing page*/
+
+.grid-9 h1#page-title {display:none}
+
+/*START styling for the featured event*/
+#zone-content {
+  padding-bottom:0;
+}
+#views_slideshow_cycle_teaser_section_events-attachment_1 {height:210px}
+.attachment.attachment-before {}
+.attachment.attachment-before .view-content {
+  overflow:hidden;
+  background:#F7EFED;
+  height:210px;
+  margin-bottom:20px
+}
+.event-feature  {}
+.event-feature-left {
+  margin:15px 0;
+  width:280px;
+  float:left;
+}
+/*
+#event-feature-img-outer {border:2px solid #d21034}
+#event-feature-img-inner {border:2px solid #fff}
+*/
+.event-feature-img-inner img {
+  /* width:292px; */
+  width:280px;
+  height:180px
+}
+.event-feature-right  {margin-top:15px;font-size:14px}
+.event-feature-title  {
+  font-size:14px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.event-feature-location,
+.event-feature-datetime {font-weight:700}
+.event-feature-text {  
+  height:53px;
+  overflow:hidden
+}
+.attachment.attachment-before .view-footer {
+  clear:both;
+  padding:0.2em 0.4em;
+  background-color:#ededed;
+  border:1px solid #ccc;
+}
+.views-slideshow-controls-bottom {
+  float: right;
+  margin-top: -35px;
+  margin-right:10px;
+  position: relative;
+  z-index:100;
+  display:block
+}
+.widget_pager .views-slideshow-pager-field-item {
+  float: left;
+  text-indent: -10000px;
+  background-color:#ccc;
+  border-radius:100%;
+  /* width:10px; */
+  height:10px;
+  margin:0 5px
+}
+.widget_pager .active {
+  float: left;
+  text-indent: -10000px;
+  background-color:#000;
+  border-radius:100%;
+  /* width:10px; */
+  height:10px;
+}
+.widget_pager .views-content-counter:hover {
+  background-color:#000;
+  border-radius:100%;
+  /* width:10px; */
+  height:10px;
+  cursor: pointer;
+}
+#view-by {
+  float:right;
+}
+/*END styling for the featured event*/
+
+/*START styling for the listings (/events) */
+.view-display-id-page_1 {margin-bottom:1.5em}
+#no-events {margin:10px 5px}
+#events-list {font-weight:700}
+.event-list {clear:both}
+.views-row-even.event-list .event-listing,
+.views-row-odd.event-list .event-listing {border-top:none}
+.views-row-odd.views-row-first.event-list .event-listing {}
+.event-listing {
+  border:1px solid #ccc;
+  overflow:hidden;
+}
+.event-left {margin-bottom:10px}
+.event-right {
+  margin-left:8px !important;
+  margin-bottom:10px;
+}
+.event-listing-title {
+  font-weight:700;
+  margin:10px 0px 10px 10px
+}
+.event-listing-location {
+  font-weight:700;
+  margin:0 0 0 10px
+}
+.event-listing-datetime {
+  font-weight:700;
+  margin:0 0 0 10px
+}
+.event-listing-text {margin:10px 10px 0 0}
+.event-listing-text img {
+  float:right;
+  margin:0 0 5px 5px;
+  width:220px;
+  /* height:150px */
+  height:auto;
+}
+.event-listing-image  {margin-top:10px}
+span.date-display-single {display:block}
+/*mini-calendar styling*/
+/* .block-event-calendar-test-block-1 {height:210px} */
+.view .date-nav-wrapper .date-heading h3 {
+  font-family: 'Droid Sans', sans-serif;
+  font-size:13px
+}
+.date-nav-wrapper .item-list .pager {position:initial}
+.view .date-nav-wrapper .date-nav {
+  padding-bottom:0;
+  margin-bottom:0
+}
+.view .date-nav-wrapper .date-prev,
+.view .date-nav-wrapper .date-next {
+  background:none;
+  border-radius:0;
+  border:none
+}
+.pager li a {background:none}
+table .mini-day-on a {
+  text-decoration:none;
+  font-weight:700 !important
+}
+.calendar-calendar .mini-day-on,
+.calendar-calendar td.has-no-events {text-align:center}
+.calendar-calendar th.days {
+  background-color:transparent;
+  border:none
+}
+.calendar-calendar .mini-day-on,
+.calendar-calendar td.has-no-events {padding:3px;}
+.calendar-calendar tr td.today,
+.calendar-calendar tr.odd td.today,
+.calendar-calendar tr.even td.today {background-color:transparent}
+/* .view-event-calendar-test {margin-bottom:1.5em} */
+/*filter*/
+#block-views-exp-events-page-1,
+#block-views-exp-events-page-2 {margin-top:15px}
+#edit-field-event-type-value-wrapper label,
+#edit-field-event-type-value-wrapper .views-widget,
+#edit-field-university-value-wrapper label,
+#edit-field-university-value-wrapper .views-widget,
+#edit-field-event-location-term-target-id-wrapper label,
+#edit-field-event-location-term-target-id-wrapper .views-widget {
+  display:inline-block;
+  margin-bottom:5px
+}
+#edit-field-event-type-value-wrapper .form-item .form-type-bef-checkbox label {font-weight:400}
+#edit-field-university-value-wrapper .form-item .form-type-bef-checkbox label,
+#edit-field-event-location-term-target-id-wrapper .form-item .form-type-bef-checkbox label {
+  width:90%;
+  font-weight:400
+}
+.form-item .form-type-bef-checkbox input {
+  vertical-align:top;
+  margin:3px 2px 0 0;
+}
+#block-views-exp-events-page-1 h2.block-title {
+  font-family: 'Droid Sans', sans-serif;
+  background:none;
+  border:none;
+  border-bottom:1px solid #ccc;
+  padding:10px 0;
+  color:#000;
+  text-align:center
+}
+/* #edit-field-event-type-value-wrapper.views-exposed-widget.views-widget-filter-field_event_type_value {float:none} */
+#edit-field-event-type-value-wrapper,
+#edit-field-university-value-wrapper,
+#edit-field-event-location-term-target-id-wrapper {
+  border:1px solid #ccc;
+  margin-bottom:13px;
+  padding-top:0;
+  padding-right:12px;
+  padding-bottom:0;
+}
+.views-exposed-form label[for=edit-field-event-type-value],
+.views-exposed-form label[for=edit-field-university-value],
+.views-exposed-form label[for=edit-field-event-location-term-target-id]  {
+  clear:both;
+  padding:0.2em 0.4em;
+  background-color:#ededed;
+  border-bottom:1px solid #ccc;
+  width:100%;
+  margin-bottom:10px !important;
+}
+.form-type-bef-checkbox {margin-left:5px}
+/*END styling for the listings (/events) */
+
+/*START styling for individual event display*/
+.event-datetime {
+  background: #efefef none repeat scroll 0 0;
+  border: 2px solid #ccc;
+  font-size:14px;
+  font-weight:700;
+  color:#000;
+  padding:10px;
+  margin-bottom:20px;
+  margin-right:5px;
+  float:left;
+  width:417px;
+  min-height:170px
+}
+.event-location {display:none}
+.event-image  {
+  float:left;
+  margin:0 20px 10px 0;
+}
+.event-image img {}
+.event-body {margin-bottom:10px}
+.event-contact {
+  background: #ededed none repeat scroll 0 0;
+  color: #000;
+  float: left;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 20px;
+  padding: 10px;
+}
+.event-datetime h3,
+.event-contact h3 {
+  font-family:"Droid Sans", sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 2px 0 0 0;
+}
+.event-datetime h3 {margin-top:15px;font-weight:400}
+.event-contact-name  {}
+.event-contact-email,
+.event-contact-number {}
+.field-name-event-contact-email a,
+.field-name-test a {color:#000}
+.event-map {
+  background: #efefef none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  clear: right;
+  float: left;
+  margin-right: 20px;
+  margin-bottom:20px;
+  padding: 17px 15px 16px;
+}
+
+#time-image-social {
+  float:right;
+  min-height:214px;
+  width:479px;
+  margin-left:15px
+}
+/*Social media share links - addtoany*/
+.addtoany_list {
+  display:block;
+  margin-bottom:5px
+}
+/*styling for "add to calendar" link*/
+.field-name-ics-calendar-export {margin:0 5px 5px 0;font-weight:700}
+.a2a_button_twitter {margin:10px 0}
+
+#event-description {clear:both}
+#event-description img {float:left;margin-right:20px}
+
+.field-name-field-event-image {
+  display:block;
+  float:left;
+  width:300px;
+  margin-right:20px;
+  margin-bottom:10px;
+  min-height:145px
+}
+.field.field-name-event-flyer.field-type-ds.field-label-hidden {margin-top:42px}
+.field.field-name-event-flyer.field-type-ds.field-label-hidden a {font-weight:700}
+img#event-flyer {float:none;margin-right:0}
+#edit-field-event-image {border:none;margin:0;width:100%}
+#edit-field-event-file,
+#edit-field-feature-event-image,
+.field-name-body,
+.collapsible.collapsed.required-fields.group-feature-event.field-group-fieldset.form-wrapper.collapse-processed,
+.collapsible.required-fields.group-feature-event.field-group-fieldset.form-wrapper.collapse-processed {clear:both}
+.lib_link {display:inline-block}
+
+#edit-field-event-date .fieldset-legend {font-weight:700}
+/*END styling for styling for individual event display*/
+
+/*START submit an event/event archive block*/
+#block-block-41 {
+  margin-top: -32px;
+  width: 220px;
+  margin-left: -5px;
+  text-align:right;
+}
+/*END submit an event/event archive block*/

@@ -1,0 +1,19 @@
+/*styling for health ebooks pages - yl 3/3/15*/
+#ebooks-alpha {margin-bottom:1em}
+.alpha-wide {width:20px}
+.restricted_icon {width:12px;height:19px;vertical-align:text-bottom}
+/*by-author stylings*/
+.author-heading,
+.author-table {clear:both}
+.author-author {width:150px}
+.author-title {width:450px}
+/*by-title stylings*/
+.title-heading,
+.title-table {clear:both}
+.title-title {width:450px}
+.title-author {width:150px}
+/*by-subject stylings*/
+.subject-heading,
+.subject-table {clear:both}
+.subject-author {width:150px}
+.subject-title {width:450px}

@@ -1,0 +1,83 @@
+/*This file contains styles for the user profile pages (/profile/<firstname>_<lastname>))*/
+
+#visitingcard {
+  background: none repeat scroll 0 0 #e6e6ed;
+  border: 1px dotted #CCCCCC;
+  border-top:none;
+  border-collapse: separate;
+  border-spacing: 2px;
+  background-image: url('../images/greybk_seal.png');
+  background-position: 207px bottom;
+  background-repeat:no-repeat;
+  margin-bottom:1.5em;
+  padding:10px 0;
+  overflow:auto
+}
+#visitingcard-wrapper {
+  overflow-x:auto;
+  overflow-y:hidden;
+  float:left;
+  width:440px
+}
+#profile_pic {
+  background:#e6e6ed;
+  margin-right:10px;
+  float:right
+}
+.user-picture {}
+.user-picture img {
+  display:block;
+  border:1px dotted #ccc
+}
+.no_profile_pic {width:375px}
+#name-wrapper {
+  background-color:#e6e6ed;
+  font-weight:bold;
+  border:1px dotted #ccc;
+  border-bottom:1px solid #a9a9a9;
+  overflow:auto;
+  font-size:1.2em; /*16 px*/
+  padding:0.5em 10px;
+  color:#555;
+}
+#name-wrapper a {color:#555}
+#name {float:left}
+#orcid,
+#researcherid {
+  float:right;
+  font-size:0.8em /*12px*/
+}
+#info {float:left;}
+#resume, #website {}
+#lib_address {margin-right:10px}
+.field, #function-title, #sub-dept, #dept, #lib_address, #phone, #email {padding-left:10px}
+#function-title, #sub-dept, #dept, #lib_address, #phone, #email, #resume, #website {float:left}
+#sub-dept,#dept, #phone {clear:left}
+#email_resume_website_container {clear: both;height:1em;margin-bottom:10px}
+.emptydiv {padding: 7px;clear:both;}
+#phone {font-weight: bold}
+#email {font-style: italic; }
+#profile_field_1, #publications, #experience, .extra_fields {border:1px solid #ccc;clear:both;margin-bottom:1.5em;padding:0.5em;}
+#profile_field_1 {border:none;margin-bottom:0}
+.profile_field_left {float:left !important}
+.profile_field_right {float:right !important}
+#publications, #experience, .extra_fields {border-top:none;overflow-wrap:break-word}
+#profile_field_1 ul,
+#publications ul,
+#experience ul,
+.extra_fields ul,
+#profile_field_1 ol,
+#publications ol,
+#experience ol,
+.extra_fields ol {padding-left:1em};
+#resume_website_container {}
+#resume, #website, #fb, #twtr, #linkedin {clear:both;margin-bottom:10px;}
+#social a {margin-right:10px;}
+#social img {width:21px; height:21px}
+/*#social #resume img {width:auto; height:auto}*/
+#card-right {}
+.address_container_left {float:left; /* width:240px */}
+.address_container_right {float:left}
+#profile_blocks {width:960px;margin-left:-10px;float:left;display: inline;}
+#card-left {float:left;width:150px;height:200px;margin-left:10px;}
+#card-right {}
