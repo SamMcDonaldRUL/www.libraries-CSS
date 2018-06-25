@@ -1,25 +1,31 @@
 /* styling for the hours pages */
 
-/*START 'Useful Links' block styling*/
-#block-block-46 {margin-bottom:1.5em}
-#block-block-46 .content {
-  border:1px solid #e8e8e8;
-  border-top:none;
-  padding:0.5em;
-  width:auto
+/*START late night hours side block*/
+#late-night-hours {
+  border:1px solid #ccc;
+  padding:15px;
+  width: auto;
+  margin-bottom: 1.5em;
 }
-#block-block-46 .views-row-even {margin:1em 0}
-#block-block-46 a {
-  color: #0023C6;
-  text-decoration:none
-}
-#block-block-46 a:hover {color:#0062A0}
-/*END 'Useful Links' block styling*/
+#late-night-hours ul {padding-left:1em}
+#late-night-hours p:last-child {margin-bottom:0}
+/*END late night hours side block*/
 
-/*START libcal widget styling - mostly defaults*/    
+/*START Useful Links side block*/
+#useful-links {
+  border:1px solid #ccc;
+  padding:15px;
+  width: auto;
+  margin-bottom: 1.5em;
+}
+#useful-links ul {margin-bottom:0}
+#useful-links ul li {list-style:none}
+/*END Useful Links side block*/
+
+/*START libcal widget styling - mostly defaults*/
 /* <!-- Please note: The following styles are optional, feel free to modify! //--> */
 .s-lc-whw thead { background-color: #F5F5F5; }
-.s-lc-whw-head-date { color: #999; }
+.s-lc-whw-head-date { color: #222; }
 .s-lc-whw-today-h {  background-color: #ddd; }
 .s-lc-whw-today { background-color: #F5F5F5; }
 .s-lc-whw-bh { text-align: right; white-space: nowrap; }

@@ -10,7 +10,7 @@
   background-position: 420px 20px;
   margin-top: -40px;
   padding-top: 40px;
-  margin-bottom: -40px;  
+  margin-bottom: -40px;
   padding-bottom: 40px;
 }
 #orcid-logo {
@@ -19,7 +19,7 @@
   margin:10px 20px;
 }
 #ru-orcid-logo {margin:0 10px}
-#orcid-connect {  
+#orcid-connect {
   float:right;
   width:270px;
   margin-top:40px
@@ -41,7 +41,8 @@
   width:25%;
 }
 #tabs-container div.picked {
-  background:#A6CE39;
+  /* background:#A6CE39; */
+  background:#007fac;
   border-radius:10px 10px 0 0;
   color:#fff;
   font-weight:700;
@@ -64,7 +65,8 @@
   background:none;
 }
 .container  {
-  border-top:6px solid #A6CE39;
+  /* border-top:6px solid #A6CE39; */
+  border-top:6px solid #007fac;
   display:none;
   padding:1.5em;
   position:relative;
@@ -85,9 +87,11 @@
 #welcome1 {
   position: absolute;
   margin-top: -520px;
-  font-size:14px;
+  /* font-size:14px; */
+  font-size:16px;
   font-weight:700;
-  color:#A6CE39
+  /* color:#A6CE39 */
+  color:#222;
 }
 #welcome2 {
   position: absolute;
@@ -105,10 +109,12 @@
 }
 .container.why {}
 #why1, #why4 {
-  font-size:14px;
+  /* font-size:14px; */
+  /* color:#A6CE39; */
   font-weight:700;
-  color:#A6CE39;
   padding-bottom:20px;
+  font-size:16px;
+  color:#222;
 }
 #why2 {
   float:left;
@@ -135,17 +141,19 @@
 }
 .container.orcid-rutgers {}
 #orcid-rutgers1 {
-  font-size:14px;
+  /* font-size:14px; */
+  /* color:#A6CE39; */
   font-weight:700;
-  color:#A6CE39;
   padding-bottom:20px;
+  font-size:16px;
+  color:#222;
 }
 #orcid-rutgers2 {padding-bottom:20px}
 #orcid-rutgers2 a {
   font-size:16px;
   font-weight:700
 }
-#orcid-rutgers3 {}  
+#orcid-rutgers3 {}
 .orcid-rutgers-title {
   font-size:16px;
   font-weight:700;
@@ -155,19 +163,21 @@
   float:left;
   width:46%;
   margin-right:10px;
-}  
+}
 #orcid-rutgers5 {
   float:right;
   width:50%;
   margin-left:10px;
 }
 #faq1 {
-  font-size:14px;
+  /* font-size:14px; */
+  /* color:#A6CE39; */
   font-weight:700;
-  color:#A6CE39;
   padding-bottom:20px;
+  font-size:16px;
+  color:#222;
 }
-.faq-title {  
+.faq-title {
   font-size:16px;
   font-weight:700;
   color:#007FAC
@@ -205,7 +215,7 @@
   font-size: 1.5em;
   font-weight: 700;
   color:#007FAC;
-  cursor:pointer;  
+  cursor:pointer;
   margin-right: 5px;
   width: 10px;
 }
@@ -229,4 +239,5 @@
 }
 #side-col a:link,
 #side-col a:visited {color:#fff}
+#learn-more li a:link,#learn-more li a:visited {border-bottom:1px solid #fff}
 /*END side column styling */

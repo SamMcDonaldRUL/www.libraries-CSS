@@ -1,41 +1,31 @@
+#block-views-b67c2ee25d13bf60ed3d864be599ab88 h2.block-title,
+#block-views-events-block-2 h2.block-title {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 15px 0;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+
 .block-news-block-2,
 .block-news-block-3,
 .block-b67c2ee25d13bf60ed3d864be599ab88,
-.block-03543ecf3c873e9e65378a589dbecb9b,
 #block-views-b67c2ee25d13bf60ed3d864be599ab88,
-#block-views-events-block-2 {
-  margin-bottom:1.5em;
-}
-
+#block-views-events-block-2 {margin-bottom:1.5em}
 #block-views-news-block-2 .content,
 #block-views-news-block-3 .content,
 #block-views-b67c2ee25d13bf60ed3d864be599ab88 .content,
-#block-views-03543ecf3c873e9e65378a589dbecb9b .content,
 #block-views-events-block-2 .content{
-  border:1px solid #e8e8e8;
+  border:1px solid #ccc;
   border-top:none;
-  padding:0.5em;
+  padding:15px;
   width:auto;
 }
 #block-views-news-block-2 .views-row-even,
 #block-views-news-block-3 .views-row-even,
 #block-views-b67c2ee25d13bf60ed3d864be599ab88 .views-row-even,
-#block-views-03543ecf3c873e9e65378a589dbecb9b .views-row-even,
 #block-views-events-block-2 .views-row-even {
   margin:1em 0;
-}
-#block-views-news-block-2 a,
-#block-views-news-block-3 a
-#block-views-b67c2ee25d13bf60ed3d864be599ab88 a,
-#block-views-03543ecf3c873e9e65378a589dbecb9b a,
-#block-views-events-block-2 a {
-  color: #0023C6;
-  text-decoration:none;
-}
-#block-views-news-block-2 a:hover,
-#block-views-b67c2ee25d13bf60ed3d864be599ab88 a:hover,
-#block-views-events-block-2 a:hover{
-  color:#0062A0;
 }
 .field-name-field-last-updated {
   margin:1.5em 0;
@@ -86,12 +76,11 @@
   padding: 2px 20px;
   text-align: right;
   font-weight: 400;
-  font-family: "Lucidia Console",Monaco,monospace;
   font-variant: small-caps;
   font-size: 0.9230769230769231em;
   line-height: 1.5em;
   background-image: url("../images/question_mark_arrow.png");
-  background-position: 115px -52.5px;
+  background-position: 140px -52.5px;
   background-repeat: no-repeat;
 }
 /*END styling for the Event calendar link in the upcoming events block*/

@@ -6,7 +6,6 @@
 
 /**START links blocks**/
 h2.block-title {border:none;padding:0.2em 0.4em 0.2em 0em;font-weight:400}
-#block-nodeblock-17008,
 #block-nodeblock-7896 {margin-top:48px}
 .node ol, .node ul {padding:0}
 .block-nodeblock .content ul li {
@@ -23,6 +22,7 @@ h2.block-title {border:none;padding:0.2em 0.4em 0.2em 0em;font-weight:400}
   height:200px
 }
 .views-slideshow-cycle-main-frame-row .views-field-title {margin-bottom:20px}
+#views_slideshow_cycle_teaser_section_alternate_front_page_news-block_10_1 {height:460px !important}
 #views_slideshow_controls_text_previous_alternate_front_page_news-block_10_1 a,
 #views_slideshow_controls_text_next_alternate_front_page_news-block_10_1 a {
   background: url(../images/clearpix.gif);
@@ -37,40 +37,40 @@ h2.block-title {border:none;padding:0.2em 0.4em 0.2em 0em;font-weight:400}
 #views_slideshow_controls_text_previous_alternate_front_page_news-block_10_1 a:hover,
 #views_slideshow_controls_text_next_alternate_front_page_news-block_10_1 a:hover {border:none}
 #views_slideshow_controls_text_previous_alternate_front_page_news-block_10_1 a {
-  /*background: url(../images/arrow-prev.png) no-repeat 0px 50%;*/
-  background-image:url("../images/slideshow_controls.png");
-  background-position:-10px 50px;
-  background-repeat:no-repeat;
+  background-position: 0 50px;
+  background-image: url(../images/ArrowLeft1.svg);
+  background-repeat: no-repeat;
+  width:40px
 }
 #views_slideshow_controls_text_next_alternate_front_page_news-block_10_1 a  {
-  /*background: url(../images/arrow-next.png) no-repeat 100% 50%;*/
-  background-image:url("../images/slideshow_controls.png");
-  background-position:-60px 50px;
-  background-repeat:no-repeat;
+  background-position: 0 50px;
+  background-image: url(../images/ArrowRight1.svg);
+  background-repeat: no-repeat;
+  width:40px
 }
 #views_slideshow_controls_text_previous_alternate_front_page_news-block_10_1  {
   float: left;
   width: auto;
   position: absolute;
-  top:-380px;
+  top: -410px;
   left:-250px;
 }
 #views_slideshow_controls_text_next_alternate_front_page_news-block_10_1 {
   float: left;
   width: auto;
   position: absolute;
-  top: -380px;
-  right: 40px;
+  top: -410px;
+  right: 30px;
 }
 #views_slideshow_controls_text_pause_alternate_front_page_news-block_10_1 {display:none}
+#hs-news {width:260px;margin-right:50px}
 /** END news block **/
 
 /**START Dr. MERL block **/
 #news-dr-merl {margin-top:40px}
-#dr-merl h2.block-title, 
+#dr-merl h2.block-title,
 #region-front-page-bottom-center h2.block-title{font-weight:700;font-size:16px}
-/* #dr-merl-img {margin-bottom:104px} */
-#dr-merl-date, 
+#dr-merl-date,
 #dr-merl-title {margin-bottom:20px}
 #dr-merl-titles li {
   list-style:none;
@@ -78,8 +78,6 @@ h2.block-title {border:none;padding:0.2em 0.4em 0.2em 0em;font-weight:400}
 }
 /**END Dr. MERL block **/
 
-/* #region-front-page-bottom-left, */
-/* #region-front-page-bottom-center {margin-top:-140px} */
 .view-id-library_center h2.block-title {
   font-size: 16px;
   font-weight: 700;

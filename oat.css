@@ -1,12 +1,13 @@
+#alert_message {margin-bottom:48px}
 /*START front page of OAT styling*/
 #faculty{
-  background:url(/sites/default/files/oat/faculty_090617.jpg);
-  height:411px;
-  margin:-20px -10px 0
+  background:url(/sites/default/files/oat/MainBanner_trans.png) no-repeat;
+  height:400px;
+  margin:-32px -10px 0
 }
 #faculty-left {
   float: left;
-  margin-top: 146px;
+  margin-top: 141px;
   margin-left: 41px;
   margin-right: 205px;
 }
@@ -14,23 +15,22 @@
   display: block;
   width: 159px;
   height: 48px;
+  border:none;
 }
 #faculty-right {
   float: left;
   width: 291px;
   height: 275px;
   margin-left: 165px;
-  margin-top: 135px;
+  margin-top: 137px;
 }
 #faculty-right ul,
-#students-right ul {
-  padding:1em 1em 1em
-}
+#students-right ul {padding:1em 1em 1em}
 #faculty-right ul {padding-top:5px}
 #faculty-right ul li,
 #students-right ul li {
   list-style:none;
-  margin-bottom:20px
+  margin-bottom:12px
 }
 #faculty-right ul li a:link,
 #faculty-right ul li a:visited,
@@ -39,8 +39,11 @@
 #bottom-row-general ul li a:link,
 #bottom-row-general ul li a:visited {
   color:#fff;
-  /* font-size:1.2em; */
+  border-bottom:none;
 }
+#faculty-right ul li a:hover,
+#students-right ul li a:hover,
+#bottom-row-general ul li a:hover {border-bottom:1px solid #fff}
 #students{
   background:url(/sites/default/files/oat/students_090617.jpg);
   background-position-x: -1px;
@@ -65,14 +68,12 @@
   margin-left: 165px;
 }
 #bottom-row-general {
-  background:#647A99;
+  background:#2a4569;
   height: 50px;
   width: 45%;
   margin: 0 auto;
 }
-#bottom-row-general ul {
-  padding:1.2em
-}
+#bottom-row-general ul {padding:15px 30px 0px 50px}
 #bottom-row-general ul li{
   display:inline;
   margin-right:32px
@@ -80,23 +81,18 @@
 /*END front page of OAT styling*/
 
 /*START OAT sub-pages styling*/
-img#oat-subpage-graphic {
-  margin:-12px -10px 0;
-}
+a#oat-header-link:hover {border-bottom:none}
+img#oat-subpage-graphic {margin:-26px -10px 0}
 h2.block-title {
   font-size:18px;
   line-height:30px;
   height:33px;
   border:none;
-  background: url(/sites/default/files/oat/oat-nav.png);
-  background-size:cover;
+  font-weight:700;
 }
-div.descriptive-page-right-box-nav-content ul {
-  margin-left:0;
-}
-div.descriptive-page-right-box-nav-content ul li:last-child {
-  border:none;
-}
+div.descriptive-page-right-box-nav-content ul {margin-left:0}
+div.descriptive-page-right-box-nav-content ul li:last-child {border:none}
 ol#faq li {font-weight:700}
 ol#faq li > * {font-weight:400}
+.descriptive-page-right-box-nav-content a:hover{border-bottom:1px solid #0754cc}
 /*END OAT sub-pages styling*/

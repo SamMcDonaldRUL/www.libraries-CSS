@@ -1,7 +1,6 @@
 /*This file contains styles for the user profile pages (/profile/<firstname>_<lastname>))*/
 
 #visitingcard {
-  background: none repeat scroll 0 0 #e6e6ed;
   border: 1px dotted #CCCCCC;
   border-top:none;
   border-collapse: separate;
@@ -9,15 +8,20 @@
   background-image: url('../images/greybk_seal.png');
   background-position: 207px bottom;
   background-repeat:no-repeat;
+  background-color:#e6e6ed;
   margin-bottom:1.5em;
   padding:10px 0;
   overflow:auto
 }
-#visitingcard-wrapper {
+.visitingcard-wrapper {
   overflow-x:auto;
   overflow-y:hidden;
   float:left;
-  width:440px
+  background-color:#e6e6ed;
+}
+#function-title, #sub-dept, #dept {
+  padding:0 10px;
+  background:#e6e6ed
 }
 #profile_pic {
   background:#e6e6ed;
@@ -49,15 +53,15 @@
 }
 #info {float:left;}
 #resume, #website {}
-#lib_address {margin-right:10px}
-.field, #function-title, #sub-dept, #dept, #lib_address, #phone, #email {padding-left:10px}
-#function-title, #sub-dept, #dept, #lib_address, #phone, #email, #resume, #website {float:left}
-#sub-dept,#dept, #phone {clear:left}
+.lib_address {margin-right:10px}
+.field, #function-title, #sub-dept, #dept, .lib_address, .phone, #email {padding-left:10px}
+#function-title, #sub-dept, #dept, .lib_address, .phone, #email, #resume, #website {float:left}
+#sub-dept,#dept, .phone {clear:left}
 #email_resume_website_container {clear: both;height:1em;margin-bottom:10px}
 .emptydiv {padding: 7px;clear:both;}
-#phone {font-weight: bold}
+.phone {font-weight: bold}
 #email {font-style: italic; }
-#profile_field_1, #publications, #experience, .extra_fields {border:1px solid #ccc;clear:both;margin-bottom:1.5em;padding:0.5em;}
+#profile_field_1, #publications, #experience, .extra_fields {/*border:1px solid #ccc;*/clear:both;margin-bottom:1.5em;padding:0.5em;}
 #profile_field_1 {border:none;margin-bottom:0}
 .profile_field_left {float:left !important}
 .profile_field_right {float:right !important}

@@ -2,6 +2,10 @@
 
 .grid-9 h1#page-title {display:none}
 
+/*color of the calendar days (M, T, W, etc)*/
+.calendar-calendar th.days {color:#222}
+.calendar-calendar td {color:#4F4F4F}
+
 /*START styling for the featured event*/
 #zone-content {
   padding-bottom:0;
@@ -10,7 +14,7 @@
 .attachment.attachment-before {}
 .attachment.attachment-before .view-content {
   overflow:hidden;
-  background:#F7EFED;
+  /* background:#F7EFED; */
   height:210px;
   margin-bottom:20px
 }
@@ -29,27 +33,30 @@
   width:280px;
   height:180px
 }
-.event-feature-right  {margin-top:15px;font-size:14px}
+.event-feature-right  {
+  margin-top:15px;
+  /* font-size:14px */
+}
 .event-feature-title  {
-  font-size:14px;
+  /* font-size:14px; */
   font-weight:700;
-  margin-bottom:10px;
+  margin-bottom:10px
 }
 .event-feature-location,
 .event-feature-datetime {font-weight:700}
-.event-feature-text {  
-  height:53px;
+.event-feature-text {
+  height:45px;
   overflow:hidden
 }
 .attachment.attachment-before .view-footer {
   clear:both;
   padding:0.2em 0.4em;
   background-color:#ededed;
-  border:1px solid #ccc;
+  border:1px solid #ccc
 }
 .views-slideshow-controls-bottom {
   float: right;
-  margin-top: -35px;
+  margin-top: -20px;
   margin-right:10px;
   position: relative;
   z-index:100;
@@ -122,12 +129,14 @@
   height:auto;
 }
 .event-listing-image  {margin-top:10px}
+.event-listing-left {word-wrap: break-word}
+.event-listing-right {}
 span.date-display-single {display:block}
 /*mini-calendar styling*/
 /* .block-event-calendar-test-block-1 {height:210px} */
 .view .date-nav-wrapper .date-heading h3 {
-  font-family: 'Droid Sans', sans-serif;
-  font-size:13px
+  font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
+  font-size:16px
 }
 .date-nav-wrapper .item-list .pager {position:initial}
 .view .date-nav-wrapper .date-nav {
@@ -180,7 +189,7 @@ table .mini-day-on a {
   margin:3px 2px 0 0;
 }
 #block-views-exp-events-page-1 h2.block-title {
-  font-family: 'Droid Sans', sans-serif;
+  /* font-family: 'Droid Sans', sans-serif; */
   background:none;
   border:none;
   border-bottom:1px solid #ccc;
@@ -213,9 +222,7 @@ table .mini-day-on a {
 
 /*START styling for individual event display*/
 .event-datetime {
-  background: #efefef none repeat scroll 0 0;
-  border: 2px solid #ccc;
-  font-size:14px;
+  border: 1px solid #ccc;
   font-weight:700;
   color:#000;
   padding:10px;
@@ -248,7 +255,10 @@ table .mini-day-on a {
   color: #000;
   margin: 2px 0 0 0;
 }
-.event-datetime h3 {margin-top:15px;font-weight:400}
+.event-datetime h3 {
+  margin-top:15px;
+  font-weight:400
+}
 .event-contact-name  {}
 .event-contact-email,
 .event-contact-number {}
@@ -292,20 +302,26 @@ table .mini-day-on a {
 }
 .field.field-name-event-flyer.field-type-ds.field-label-hidden {margin-top:42px}
 .field.field-name-event-flyer.field-type-ds.field-label-hidden a {font-weight:700}
-img#event-flyer {float:none;margin-right:0}
-#edit-field-event-image {border:none;margin:0;width:100%}
+img#event-flyer {
+  float:none;
+  margin-right:0
+}
+#edit-field-event-image {
+  border:none;
+  margin:0;
+  width:100%
+}
 #edit-field-event-file,
 #edit-field-feature-event-image,
 .field-name-body,
 .collapsible.collapsed.required-fields.group-feature-event.field-group-fieldset.form-wrapper.collapse-processed,
 .collapsible.required-fields.group-feature-event.field-group-fieldset.form-wrapper.collapse-processed {clear:both}
 .lib_link {display:inline-block}
-
 #edit-field-event-date .fieldset-legend {font-weight:700}
 /*END styling for styling for individual event display*/
 
 /*START submit an event/event archive block*/
-#block-block-41 {
+#submit-event-block {
   margin-top: -32px;
   width: 220px;
   margin-left: -5px;

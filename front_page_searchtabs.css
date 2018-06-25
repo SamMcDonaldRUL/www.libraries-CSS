@@ -1,29 +1,21 @@
+/*Styles for the search tabs*/
+
 #tContainer {
-  /*background-color:#ededed;*/
   background:none;
   border-top-right-radius:5px;
   border-top-left-radius:5px;
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-size:13px; */
-  /* line-height:1.076923076923077em;*/   /* 14px --> 14 ÷ 13 = 1.076923076923077 */
-  padding:6px 0px 1px;
-  /* width:932px; */
-  /* margin-top:4px; */
-  /*border:1px solid #cccccc;
-  border-bottom:none;*/
+  padding:0px 0px 19px;
   border:none;
-/*   white-space: nowrap; */
-  height:1.5em;
+  height:1.5em
 }
 #tContainer ul  {
   list-style-type:none;
   text-align:left;
   margin:0;
   padding:0;
-  float:left;
+  float:left
 }
 #tContainer li  {
-  /*background: url("../images/absurdidad_dark3_mak.png"); */
   background-color:#ecf0f4;
   border:1px solid #d8d8d8;
   border-bottom:none;
@@ -34,260 +26,124 @@
   margin: 3px 3px 0 0;
   padding: 10px 7px;
   position:relative;
-  font-size:16px
+  font-size:16px;
+  height:19px;
+  display:inline-block;
 }
 #tContainer li.picked {
-  /*background:url("../images/absurdidad_dark4_mak1.png") repeat scroll 0 0 transparent;*/
-  /*background: url("../images/pattern2.png") repeat scroll 0 0 #ffffff;*/
-  /* background: url("../images/absurdidad_may13.png") repeat scroll 0 0 transparent; */
-  /*background-color:#FFF;*/
   background:#fcfcfc;
-  /* border-top:2px solid #e31836; */
-  /* border-left:1px solid #e31836; */
-  /* border-right:1px solid #e31836; */
-  border-top:1px solid #36404e; 
+  border-top:1px solid #36404e;
   border-left:1px solid #36404e;
   border-right:1px solid #36404e;
-  /* box-shadow: 2px -1px 2px -1px #999999; */
-  /* color:#D20134; */
   font-weight:700;
-  /* position:relative; */
-  /* z-index:1; */
   padding-bottom:11px
 }
 #tContainer li.art {margin-left:0px;}
-/* #tContainer li.art.picked { */
-  /*border-left: 1px solid #e31836;  */
-  /* padding:3px 10px 4px; */
-/* } */
-/* #tContainer li.cat.picked {padding:3px 10px 4px} */
-/* #tContainer li.jou.picked {padding:3px 10px 4px} */
-/* #tContainer li.media.picked {padding:3px 9px 4px} */
-/* #tContainer li.reserves.picked {padding:3px 9px 4px} */
-#tContainer li.health {/* margin-left:128px; */margin-right:0px;}
-#tContainer li.health.picked {padding:3px 10px 4px 11px;box-shadow:none;/* margin-left:132px; */}
-/* @-moz-document url-prefix() { */
-  /* #tContainer li.art.picked, */
-  /* #tContainer li.cat.picked, */
-  /* #tContainer li.jou.picked  {padding:3px 10px 4px;} */
-  /* #tContainer li.media.picked, */
-  /* #tContainer li.reserves.picked {padding:3px 9px 4px} */
-/* } */
-#sContainer {
-  margin-top:6px;
-  /*width:940px;*/
-  /*border:1px solid #cccccc;
-  border-top:none;*/
-  /* border:none; */
-  /* border-bottom-left-radius:3px; */
-  /* border-bottom-right-radius:3px; */
-  /*height: 9.5em;*/
-  /* position:relative; */
-  /* z-index:0; */
-  /*background-color:#ededed;*/
-  /* background:none; */
-  /* downloaded from www.subtlepatterns.com */
-  /*background:url("../images/absurdidad.png") repeat scroll 0 0 transparent;*/
-  /*background-color:#FFF;
-  background: -webkit-linear-gradient(90deg, rgb(204, 204, 204) 0%, rgb(255, 255, 255) 35%);
-  background: -o-linear-gradient(90deg, rgb(204, 204, 204) 0%, rgb(255, 255, 255) 100%);
-  background: -ms-linear-gradient(90deg, rgb(204, 204, 204) 0%, rgb(255, 255, 255) 100%);
-  /*background: linear-gradient(180deg, rgb(204, 204, 204) 0%, rgb(255, 255, 255) 100%);
-  background: linear-gradient(180deg, #fff 65%, #ccc 100%) repeat scroll 0 0 transparent;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CCCCCC');
-  */
-}
-@-moz-document url-prefix() {
-  #sContainer {margin-top:7px}
+#tContainer li.health {margin-right:0px;}
+#tContainer li.health.picked {
+  padding:3px 10px 4px 11px;
+  box-shadow:none
 }
 .con  {
   height:133px;
-  padding-top:1px;
-  /*background: url("../images/absurdidad_dark4_mak1.png") repeat scroll 0 0 #ffffff;*/
-  /* background: url("../images/absurdidad_may13.png") repeat scroll 0 0 #ffffff; */
-  /*background: url("../images/pattern2.png") repeat scroll 0 0 #ffffff;*/
   background:#fcfcfc;
   border:1px solid #36404e;
   border-radius:3px;
   display:none;
-  /* height:113px; */
-  /*margin:0 0 5px 0;*/
-  /* padding:1.5em; */
-  /* position:relative; */
-  width:580px;
-  /* z-index:10; */
+  width:580px
 }
 .con.art {
   border-top-left-radius:0;
   display:block;
 }
-/* .con.health { */
-  /* border-top-right-radius: 0; */
-  /* font-size: 1.07692em; */
-  /* font-weight: 700; */
-  /* height: 117px; */
-  /* padding-top: 1em; */
-/* } */
-/* .con.health a {font-size:1em; font-weight:400;color:#165A92 !important} */
 .input, .input[type="text"]{
-  /*font-size:1.166666666666667em;  /* 14px --> 14 ÷ 12 = 1.166666666666667 */
-  /*font-size:1em;  /* 14px --> 14 ÷ 14 = 1 */
   font-size:16px;
-  font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
+  font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif
 }
 .input.noFocus  {
   color:#222;
-  font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
+  font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif
 }
 .input.straight {
   color:#000000;
-  font-style:normal;
+  font-style:normal
 }
 .content  {
   margin-bottom:10px;
-  width:100%;
+  width:100%
 }
 .content.cat  {
   margin-top:16px;
-  font-weight:bold;
+  font-weight:bold
 }
 .content.art  {
   margin-top:16px;
-  font-weight:bold;
+  font-weight:bold
 }
 .content.jou  {
   margin-top:16px;
-  font-weight:bold;
+  font-weight:bold
 }
 .content.media {
   margin-top:16px;
-  font-weight:bold;
+  font-weight:bold
 }
 .content.reserves {
   margin-top:16px;
-  font-weight:bold;
+  font-weight:bold
 }
 .advanced {
-  /* font-weight:normal; */
   margin:10px 20px 0 20px;
-  /* padding-top: 1.2em; */
   overflow:auto
 }
-.advanced a {
-  /*color: #09297A;*/
-  /* color:#0032C6 !important; */
-  /* padding:2px 3px; */
-  /* font-weight:700; */
-  font-size:16px
-  /* text-shadow:2px 2px #FFFFFF; */
-}
+.advanced a {font-size:16px}
 .reserves .advanced {margin-top:44px}
 #view-all-db,
 #cat-more-options,
 .ebsco_link {
   margin-top:10px;
-  margin-right:5px;  
+  margin-right:5px;
   float:left
 }
-.shiny  {
-  font-weight:normal;
-  font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
-  /*font-size:1.166666666666667em;  /* 14px --> 14 ÷ 12 = 1.166666666666667 */
-  /*font-size:1em;  /* 14px --> 14 ÷ 14 = 1 */
-  font-size:16px
-}
-.shiny.reg  {
-  /*font-size: 1em;     /* 12px --> 12 ÷ 12 = 1 */
-  /*font-size: 0.8571428571428571em;  /* 12px --> 12 ÷ 14 = 0.8571428571428571 */
-  font-size: 0.9230769230769231em;  /* 12px --> 12 ÷ 13 = 0.9230769230769231 */
-  background:url(../images/searchtabs/shiny-bg.png) repeat-x;
-}
 .shiny.large  {
-  background: #fff;
+  background: #36404e;
   text-shadow: none;
   border-radius: 3px;
   padding: 5px 15px 3px;
-  margin-left: 10px;
-
-  /* border-radius:5px; */
-  /* margin-left:14px; */
-  /* padding:2px 5px; */
-  /* font-weight:normal; */
+  margin-left: 8px;
   font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
   font-size:16px;
-  border: 1px solid #0754cc;
-  color:#0754cc;
+  font-weight:400;
+  color:#fff;
 }
-.shiny.small  {
-  /*font-size:0.9166666666666667em; /*11px = 11 ÷ 12 = 0.9166666666666667 */
-  /*font-size:0.7857142857142857em; /*11px = 11 ÷ 14 = 0.7857142857142857 */
-  font-size:0.8461538461538462em; /*11px = 11 ÷ 13 = 0.8461538461538462 */
-  background: url(../images/searchtabs/shiny-bg.png) repeat-x;
-}
-.what {
-  /* position:absolute; */
-  /*margin:2em 0 0 390px;*/
-  /* margin: -46px 0 0 543px; */
-  float:right
-}
-.what-home  {
-  /* position:absolute; */
-  /* margin:20px 0 0 625px; */
-  float:right
-}
-.what-text  {
-  /*font-size: 1em;     /* 12px --> 12 ÷ 12 = 1 */
-  /*font-size: 0.8571428571428571em;  /* 12px --> 12 ÷ 14 = 0.8571428571428571 */
-  font-size: 0.9230769230769231em;  /* 12px --> 12 ÷ 13 = 0.9230769230769231 */
-  font-weight:normal;
-  text-decoration:underline;
-  cursor:pointer;
-}
+.what,
+.what-home  {float:right}
 .what-icon-q  {
-  width:32px;
-  height:32px;
-  /* background-image:url("../images/question_mark_arrow.png"); */
-  /* background-position:-10px -10px; */
+  width:28px;
+  height:28px;
   background-image:url("../images/help.svg");
-  cursor:pointer;
-}
-.what.lower {
-  margin-top:165px;
+  cursor:help;
+  margin-top:5px
 }
 .what-content {
   text-align:left;
-  /*font-size:1.166666666666667em;  /* 14px --> 14 ÷ 12 = 1.166666666666667 */
-  /*font-size:1em;  /* 14px --> 14 ÷ 14 = 1 */
   font-size:1em;
   font-weight:normal;
   border:1px solid #c1c1c7;
   position:absolute;
   background-color:#ffffff;
-  /* margin:0 0 0 -400px; */
   margin:25px 0 0 -510px;
   padding:5px;
   display:none;
-  z-index:10;
+  z-index:10
 }
-.what-content P {
-  width:400px;
-}
-.what-content a {
- /* color:#0032c6 !important; */
-}
-.what-icon-q {
-  /* position: absolute; */
-  /*margin: 80px 0 0 75px;*/
-  /* margin:48px 0 0 -70px; */
-}
+.what-content P {width:400px}
 .what-quicksearch-content {margin:-146px 0 5px -442px}
 .what-cat-content {margin:-98px 0 5px -442px}
 .what-rjournals-content,
 .what-reserves-content {margin:-122px 0 5px -442px}
 .hint {
   text-align:left;
-  /*font-size:1.166666666666667em;  /* 14px --> 14 ÷ 12 = 1.166666666666667 */
-  /*font-size:1em;  /* 14px --> 14 ÷ 14 = 1 */
   font-size:1em;
   font-weight:normal;
   border:1px solid #c1c1c7;
@@ -299,47 +155,33 @@
   margin: 10px 0 0 5px;
   white-space:nowrap;
 }
-.hint.art     {margin-left:40px;}
-.hint.books   {margin-left:80px;}
-.hint.journals{margin-left:155px;}
-.hint.media   {margin-left:230px;}
-.hint.reserves{margin-left:330px;}
-.beta {
-  /* yl 3/11/13
-  position: absolute;
-  background-image:url(../images/searchtabs/beta_icon.jpg);
-  background-repeat:no-repeat;
-  background-position:0px 0px;
-  width: 40px;
-  height: 16px;
-  margin:-23px 0 0 490px;
-  */
-}
-.what-content P {
-  width:430px;
-}
-#dbgroup, #srchfield1, #srchfield2, #mediasearch, #reserve-filter {
+.hint.art     {margin-left:40px}
+.hint.books   {margin-left:80px}
+.hint.journals{margin-left:155px}
+.hint.media   {margin-left:230px}
+.hint.reserves{margin-left:330px}
+
+.what-content P {width:430px}
+#dbgroup,
+#srchfield1,
+#srchfield2,
+#mediasearch,
+#reserve-filter {
   width:40%;
-  /*font-size:1.166666666666667em;  /* 14px --> 14 ÷ 12 = 1.166666666666667 */
-  /*font-size:1em;  /* 14px --> 14 ÷ 14 = 1 */
   font-size:16px;
   line-height:24px;
   font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
-  /* padding:0; */
   color:#4d4d4d;
+  background-color:#fff;
+  padding-left:0
 }
-/* .search-input-top { */
-  /* text-align: left; */
-  /* margin: 5px 0 5px 14px; */
-/* } */
-.search-input-bottom {
-  /* text-align: left; */
-  /* margin: 5px 0 0 14px; */
-  margin-top:5px
-}
+.search-input-bottom {margin-top:5px}
 .con form {margin:0 30px 0 20px}
-.ru_restricted {/* padding-left:1.2em; */ float:left;margin-top:10px}
-.ru_restricted img {/*vertical-align:text-top*/ width:24px}
+.ru_restricted {
+  float:left;
+  margin-top:10px
+}
+.ru_restricted img {width:24px}
 .ru_restricted a:nth-child(2):hover {border:none}
 label[for=ebscohostsearchtext],
 label[for=dbgroup],
@@ -350,28 +192,38 @@ label[for=inputJournals],
 label[for=reserve-filter],
 label[for=inputReserves] {
   display:none;
-  visibility:hidden;
+  visibility:hidden
 }
 #ebscohostsearchtext,
 #inputCat,
 #inputJournals,
-#inputReserves {width:70%}
+#inputReserves {width:78%}
 .legacy_catalog_link {
   float:left;
+  margin-top:10px;  
   margin-left:20px;
-  line-height:0px
+  line-height:0px;
+  width:1px
 }
 .legacy_catalog_link a {
   font-size:12px;
-  line-height:initial
+  line-height:15px
 }
 ::-webkit-input-placeholder{color:#222}
-:-moz-placeholder{color:#222}
-::-moz-placeholder{color:#222}
+:-moz-placeholder{color:#222;opacity:1}
+::-moz-placeholder{color:#222;opacity:1}
 :-ms-input-placeholder{color:#222}
 select:focus,
 input:focus {box-shadow:none}
 .ui-menu .ui-menu-item a{
   font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
   font-size: 16px
+}
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+  select {
+    -webkit-appearance:menulist;
+    background-image:none;
+    padding:0
+  }
 }

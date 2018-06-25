@@ -25,8 +25,20 @@ label {font-size:1.1em}
   font-size:1em
 }
 .form-actions input {
-  font-size:1.1em;
-  font-weight:700
+  background: #36404e;
+  border-color: #1859B7;
+  text-shadow: 0 1px 1px #001B38;
+  color: #FFF;
+  position: relative;
+  font-size: 14px;
+  margin-top:0;
+  border-radius:5px;
+  font-family:'Montserrat','Segoe UI','Century Gothic',Verdana,sans-serif;
+  font-weight:400;
+  padding:5px 10px
 }
 /*class to hide the email field...the class name is set via php code in the RUL_custom_code module*/
-.hideme {display:none}
+.hideme, 
+#edit-field-last-orcid-check,
+#edit-field-send-as-email,
+#user-profile-form > div > div.form-item {display:none}

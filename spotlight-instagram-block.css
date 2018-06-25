@@ -118,8 +118,8 @@
 #slide18:checked ~ #controls label:nth-child(19),
 #slide19:checked ~ #controls label:nth-child(20),
 #slide20:checked ~ #controls label:nth-child(1) {
-  background: url('../images/slideshow_controls.png') no-repeat;
-  background-position: -60px 68px;
+  background: url('../images/ArrowRight1.svg') no-repeat;
+  background-position: 0px 68px;
   float: right;
   display: block;
   margin-top:-275px;
@@ -146,8 +146,8 @@
 #slide18:checked ~ #controls label:nth-child(17),
 #slide19:checked ~ #controls label:nth-child(18),
 #slide20:checked ~ #controls label:nth-child(19) {
-  background: url('../images/slideshow_controls.png') no-repeat;
-  background-position: -10px 68px;
+  background: url('../images/ArrowLeft1.svg') no-repeat;
+  background-position: -0px 68px;
   float: left;
   display: block;
   margin-top:-275px;

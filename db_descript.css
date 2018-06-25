@@ -7,7 +7,7 @@ div.db_desc_left {
 }
 div.db_desc_right {
   width: 80%;
-  float: right;
+  float: right
 }
 
 /*START styling for the Funder section*/
@@ -20,27 +20,23 @@ div.db_desc_right {
 /*END styling for the Funder section*/
 
 /*START connect 'buttons' on database description pages */
+.restricted_note {overflow:auto}
 #connect {
   float: left;
-  padding: 0 2%;
+  padding: 0 2%
 }
 #connect_button{
-  -webkit-border-radius: 5;
-  -moz-border-radius: 5;
+  background: #36404e;
+  border-color: #1859B7;
+  text-shadow: 0 1px 1px #001B38;
+  color: #FFF;
+  position: relative;
+  font-size: 14px;
+  margin-top: 0;
   border-radius: 5px;
-  font-family: Arial;
-  color: #fff;
-  font-size: 11px;
-  font-weight:700;
-  background: #17529a;
-  padding: 4px 7px 3px 7px;
-  border: solid #999999 1px;
-  text-decoration: none;
-  letter-spacing:1.5px;
+  font-family: 'Montserrat','Segoe UI','Century Gothic',Verdana,sans-serif;
+  font-weight: 400;
+  padding: 5px 10px
 }
-#connect_button:hover {
-  background: #cadef8;
-  text-decoration: none;
-  color:#000;
-}
+#connect_button:hover {border:none}
 /*END connect 'buttons' on database description pages */
