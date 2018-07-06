@@ -1,4 +1,4 @@
-/* This file will hold styles for the www.libraries */
+/* This file will hold styles for the wit7-www.libraries */
 
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 html {
@@ -15,11 +15,7 @@ body {
   padding:0;
 }
 header {background-color:#36404e}
-#region-branding {
-  /* margin-left:0; */
-  /* margin-right:20px; */
-  margin:-12px 20px -12px 0;
-}
+#region-branding {margin:-12px 20px -12px 0}
 #section-content {padding:25px 0}
 #region-content {min-height:478px}
 #zone-content {
@@ -38,7 +34,7 @@ header {background-color:#36404e}
   margin-top:-5px;
   margin-bottom:-5px;
   width:auto;
-  height:90px  
+  height:90px
 }
 .logo-img {
   margin-top:18px;
@@ -337,11 +333,10 @@ div.mmenusPages .even {
   height:4em;
   padding:1.5em 0;
 }
-/* yl 12/5/12 - styling for the right menu links (Hours, My Account, Accessibility (icon)) */
+/* START Hours/My Account/Ask US menu*/
 #region-right-menu {
   margin:0;
   height:35px;
-  width:480px;
 }
 #region-right-menu ul#hours-account-aal {
   float:right;
@@ -382,11 +377,12 @@ div.mmenusPages .even {
 #region-right-menu .content {
   margin:0;
   width:auto;
-  /* background:linear-gradient(90deg, transparent 66%, #d83d0e 66%); */
-  background:linear-gradient(90deg, transparent 78%, #d83d0e 78%);
+  background:linear-gradient(90deg, transparent 69%, #d83d0e 69%);
   height:38px;
   margin-top:-3px
 }
+/* END Hours/My Account/Ask US menu*/
+
 
 /* yl 12/7/12 - styling for AAL slideout window */
 .slide-out-div {

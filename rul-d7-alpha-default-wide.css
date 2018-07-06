@@ -1,1 +1,7 @@
 /* This file will hold styles that are loaded using the same media query as the wide grid. */
+
+/* START Hours/My Account/Ask US menu*/
+#region-right-menu .content {
+  background:linear-gradient(90deg, transparent 81%, #d83d0e 81%);
+}
+/* END Hours/My Account/Ask US menu*/
