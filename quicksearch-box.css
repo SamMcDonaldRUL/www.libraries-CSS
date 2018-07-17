@@ -1,4 +1,4 @@
-/*Styles for the search box that appears on the front page and library front pages*/
+/*Styles for the QuickSearch box that appears on the front page and library front pages*/
 #qs-banner {margin-bottom:0}
 #qs-banner img {width:150px}
 #qs-banner a {border:none}
@@ -24,23 +24,23 @@
   border-radius: 5px;
   float:left;
   position:relative;
-  z-index:2;
+  z-index:2
 }
-::-webkit-input-placeholder{color:#222}
-:-moz-placeholder{color:#222;opacity:1}
-::-moz-placeholder{color:#222;opacity:1}
-:-ms-input-placeholder{color:#222}
+::-webkit-input-placeholder {color:#222}
+:-moz-placeholder {color:#222;opacity:1}
+::-moz-placeholder  {color:#222;opacity:1}
+:-ms-input-placeholder  {color:#222}
 #search_scope {
   display:none;
-  border: none;
-  font-size: 16px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, #000 50%), linear-gradient(135deg, #000 50%, transparent 50%);
-  background-position: 130px 14px,135px 14px;
-  background-size: 5px 5px, 5px 5px;
-  background-repeat: no-repeat;
-  padding-right: 25px;
+  border:none;
+  font-size:16px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  background-image:linear-gradient(45deg, transparent 50%, #000 50%), linear-gradient(135deg, #000 50%, transparent 50%);
+  background-position:130px 14px,135px 14px;
+  background-size:5px 5px, 5px 5px;
+  background-repeat:no-repeat;
+  padding-right:25px
 }
 #search_scope:focus {box-shadow:none}
 #search_scope options {padding:10px}
@@ -104,3 +104,11 @@ img#go:hover {cursor:pointer}
 #qs-links a:visited {color:#fff}
 #qs-links a:hover {border-bottom:1px solid #fff}
 a#about-icon:hover {border-bottom:none !important}
+.qs-label {  
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden
+}
