@@ -15,11 +15,7 @@ body {
   padding:0;
 }
 header {background-color:#36404e}
-#region-branding {
-  /* margin-left:0; */
-  /* margin-right:20px; */
-  margin:-12px 20px -12px 0;
-}
+#region-branding {margin:-12px 20px -12px 0}
 #section-content {padding:25px 0}
 #region-content {min-height:478px}
 #zone-content {
@@ -38,7 +34,7 @@ header {background-color:#36404e}
   margin-top:-5px;
   margin-bottom:-5px;
   width:auto;
-  height:90px  
+  height:90px
 }
 .logo-img {
   margin-top:18px;
@@ -231,7 +227,6 @@ and (max-device-width : 1024px)  {
   padding-right:22px !important;
   padding-left:22px !important;
 }
-
 .qtip-hover {
   background-color:#CCCCCC;
   color:#d20134;
@@ -337,7 +332,7 @@ div.mmenusPages .even {
   height:4em;
   padding:1.5em 0;
 }
-/* yl 12/5/12 - styling for the right menu links (Hours, My Account, Accessibility (icon)) */
+/* START Hours/My Account/Ask US menu*/
 #region-right-menu {
   margin:0;
   height:35px;
@@ -382,11 +377,11 @@ div.mmenusPages .even {
 #region-right-menu .content {
   margin:0;
   width:auto;
-  /* background:linear-gradient(90deg, transparent 66%, #d83d0e 66%); */
   background:linear-gradient(90deg, transparent 78%, #d83d0e 78%);
   height:38px;
   margin-top:-3px
 }
+/* END Hours/My Account/Ask US menu*/
 
 /* yl 12/7/12 - styling for AAL slideout window */
 .slide-out-div {
@@ -613,14 +608,6 @@ DIV.descriptive-page-right-box-content UL                {margin-bottom:0}
 /* for medical campus page*/
 A:hover.campus{color:#CC0000;}
 A:active.campus{color:#CC0000;}
-
-/*START simple feedback styling*/
-/*override the % settings from feedback simple module (feedback tab) so we can use px instead - yl 2-19-13*/
-#feedback_simple a{
-  top: 122px !important;
-}
-.feedback_simple-right {right:0 !important}
-/*END simple feedback styling*/
 
 /* yl 2-21-13 - table styling */
 table {
