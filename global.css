@@ -227,7 +227,6 @@ and (max-device-width : 1024px)  {
   padding-right:22px !important;
   padding-left:22px !important;
 }
-
 .qtip-hover {
   background-color:#CCCCCC;
   color:#d20134;
@@ -382,7 +381,6 @@ div.mmenusPages .even {
   margin-top:-3px
 }
 /* END Hours/My Account/Ask US menu*/
-
 
 /* yl 12/7/12 - styling for AAL slideout window */
 .slide-out-div {
@@ -609,14 +607,6 @@ DIV.descriptive-page-right-box-content UL                {margin-bottom:0}
 /* for medical campus page*/
 A:hover.campus{color:#CC0000;}
 A:active.campus{color:#CC0000;}
-
-/*START simple feedback styling*/
-/*override the % settings from feedback simple module (feedback tab) so we can use px instead - yl 2-19-13*/
-#feedback_simple a{
-  top: 122px !important;
-}
-.feedback_simple-right {right:0 !important}
-/*END simple feedback styling*/
 
 /* yl 2-21-13 - table styling */
 table {
