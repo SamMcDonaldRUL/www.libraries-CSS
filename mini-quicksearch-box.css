@@ -1,4 +1,4 @@
-/* styling for the mini-search tabs */
+/* styling for the mini-quicksearch box */
 #region-mini-searchtabs {
   margin-left:20px;
   margin-right:0
@@ -24,6 +24,7 @@
 :-moz-placeholder{color:#222;opacity:1}
 ::-moz-placeholder{color:#222;opacity:1}
 :-ms-input-placeholder{color:#222}
+#search_scope {display:none}
 #scope-suggestion {
   display:none;
   background:#fff;
@@ -65,3 +66,11 @@ img#go {
   padding: 0 3px 3px 0
 }
 img#go:hover {cursor:pointer}
+.qs-label {  
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden
+}
