@@ -203,3 +203,12 @@ _:-ms-input-placeholder, :root .front-page-news-block .views-slideshow-controls-
 
 /*temp class for front page news and exhibits block to reduce the white space - yl 5/22/18*/
 .back-up-temp {margin-top:-220px}
+
+/*START flexing up the hours block so that it shows first in mobile; this is overrriden in the layouts css for desktop*/
+#zone-content {
+  display:flex;
+  flex-direction:column
+}
+#region-front-page-right{order:1}
+#region-front-page-left {order:2}
+/*END flexing up the hours block so that it shows first in mobile*/

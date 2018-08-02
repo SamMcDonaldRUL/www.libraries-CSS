@@ -2,6 +2,10 @@
 
 /* START Hours/My Account/Ask US menu*/
 #region-right-menu .content {
+  width:auto;
   background:linear-gradient(90deg, transparent 81%, #d83d0e 81%);
 }
 /* END Hours/My Account/Ask US menu*/
+
+/*override block flexing*/
+#zone-content {display:block !important}

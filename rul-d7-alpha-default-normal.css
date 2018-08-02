@@ -1,3 +1,10 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+ 
+ /* START Hours/My Account/Ask US menu*/
+#region-right-menu .content {
+  width:auto;
+  background:linear-gradient(90deg, transparent 77%, #d83d0e 77%);
+}
+/* END Hours/My Account/Ask US menu*/

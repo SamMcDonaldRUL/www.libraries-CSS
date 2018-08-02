@@ -2,3 +2,13 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the normal and widescreen layouts. You may override these styles in the normal 
  *  and widescreen CSS files as appropriate. */
+
+/* START Hours/My Account/Ask US menu*/
+#region-right-menu .content {
+  width:auto;
+  background:linear-gradient(90deg, transparent 69%, #d83d0e 69%);
+}
+/* END Hours/My Account/Ask US menu*/
+ 
+ /*override block flexing*/
+#zone-content {display:block !important}
