@@ -1,1 +1,362 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+
+/*temp class for front page news and exhibits block to reduce the white space - yl 5/22/18*/
+.back-up-temp {margin-top:-220px}
+
+/*START Header section*/
+header {background-color:#36404e}
+#region-branding {margin:-12px 20px -12px 0}
+#section-content {padding:25px 0}
+#region-content {min-height:478px}
+#zone-content {
+  padding-top:7px;
+  padding-bottom:20px;
+}
+.zone {background-color:#fff}
+#zone-top-menu {background-color:#36404e}
+#zone-header-menu {
+  background:none;
+  border:none;
+  box-shadow:none;
+}
+#zone-branding {background-color:#36404e}
+#logo {
+  clip-path:none;
+  margin-top:-5px;
+  margin-bottom:-5px;
+  margin-left:0px;
+  width:auto;
+  height:90px
+}
+.logo-img {
+  margin-top:18px;
+  margin-bottom:-10px
+}
+.grid-7 .logo-img {margin-left:0}
+.logo-img a:hover {border:none}
+#zone-menu-wrapper {background:#cc0033}
+#zone-menu {
+  background:#CC0033;
+  color:#fff;
+  height:37px;
+}
+/*END Header section*/
+
+/*START styling for the top right menu links (Rutgers Home, Search Rutgers) */
+#zone-header-menu {display:block}
+/* yl 7/25/13 - styling for the top header menu links */
+#region-top-menu {
+  margin:0;
+}
+#region-top-menu div {
+  margin:5px 0;
+}
+#region-top-menu .first.leaf {
+  margin:0;
+}
+#region-top-menu .top-menu-borders {
+  border-left:1px solid #555555;
+  border-right:1px solid #555555;
+  padding: 0 10px;
+}
+#region-top-menu li {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+#region-top-menu .content {
+  margin:0;
+  width:auto;
+}
+#region-top-menu .content a {
+  color: #555555;
+  text-decoration:none;
+  font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;
+  font-size:0.9em;
+}
+#region-top-menu .content a:hover {
+  color:#555555;
+}
+#region-top-right-menu {margin:0 0 0 40px}
+#region-top-right-menu div {margin:5px 0}
+#region-top-right-menu .first.leaf {margin:0}
+#region-top-right-menu li {
+  display: inline;
+  list-style-type: none;
+  padding:0px 6px 0 8px;
+  margin:0;
+  border-left:1px solid #fff;
+}
+#region-top-right-menu li.first.leaf {border:none}
+#region-top-right-menu li.last.leaf {padding-right:0}
+#region-top-right-menu .content {
+  margin:0;
+  width:auto;
+  float:right;
+}
+#region-top-right-menu .content a {
+  color: #fff;
+  text-decoration:none;
+  font-size:0.9em;
+}
+#region-top-right-menu .content a:hover {
+  color:#fff;
+  border-bottom:1px solid #fff
+}
+.top-header-divider img {
+  width:20px;
+  height:20px;
+}
+/*END styling for the top right menu links (Rutgers Home, Search Rutgers) */
+
+/*END Hours/My Account/Ask US menu*/
+#region-right-menu ul#hours-account-aal {
+  float:right;
+  margin:3px 0 0 0;
+  border:none;
+  height:auto;
+  width:auto
+}
+/* #hours-account-aal li {border:none} */
+#region-right-menu li:nth-child(2) {border:none}
+#region-right-menu li:last-child {padding:6px 15px 8px}
+#region-right-menu li:last-child,
+#hours-account-aal li:last-child a {background:none}
+#region-right-menu li img {vertical-align:middle;display:inline}
+#hours-account-aal li:first-child img {
+  width:22px;
+  height:22px;
+  margin:0 5px 5px 0
+}
+#hours-account-aal li:nth-child(2) img {
+  width:22px;
+  height:22px;
+  margin:0 5px 5px 0;
+  transform: rotate(30deg);
+}
+#hours-account-aal li:nth-child(3) img {
+  width:28px;
+  height:28px;
+  margin:3px 5px 3px 0
+}
+#region-right-menu .content {border:none}
+/*END Hours/My Account/Ask US menu*/
+
+/*START Mega menu styling*/
+/* megamenu nav bar */
+#region-menu {
+  padding:3px 0 0;
+  margin-right:0;
+  height:30px;
+}
+/* styling for the mega menus (left links in the red bar), add div ids to this section for new menus added; yl 9/18/13 */
+#main-menu,
+#block-system-main-menu,
+#block-menu-menu-main-menu-robeson- {
+  display:block;
+  padding-bottom:1px; /*yl 1-8-13: added padding-bottom for anchor padding on the menus when they open */
+  padding-top:5px;
+  margin-bottom:0;
+}
+ul#main-menu,
+#block-system-main-menu ul,
+#block-menu-menu-main-menu-robeson- ul{
+  white-space:nowrap;
+  margin-left:20px
+}
+#main-menu li,
+#block-system-main-menu li,
+#block-menu-menu-main-menu-robeson- li{
+  padding:0;
+  white-space:nowrap;
+  display: inline;
+}
+#main-menu li.first.leaf,
+#block-system-main-menu li.first.leaf,
+#block-menu-menu-main-menu-robeson- li.first.leaf{margin-left:0}
+#main-menu li.last.leaf img,
+#block-system-main-menu li.last.leaf img,
+#block-menu-menu-main-menu-robeson- li.last.leaf img{
+  vertical-align:sub;
+  width:20px
+}
+#main-menu li,
+#block-system-main-menu li,
+#block-menu-menu-main-menu-robeson- li {white-space:nowrap}
+#main-menu li A,
+#block-system-main-menu li A,
+#block-menu-menu-main-menu-robeson- li A {
+  color:#FFF;
+  background-color:#cc0033;
+  padding:10px 22px 0px; /* yl 1-7-13: original values: 4px 12px (padding top, right, bottom, & top); max out space for 8 column grid */
+  text-decoration:none;
+  margin-top:0px;
+  font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;
+  font-weight:500;
+  -webkit-text-size-adjust: none;
+  font-size:16px;
+  border-bottom:none
+}
+#main-menu li a:hover,
+#block-system-main-menu li a:hover,
+#block-menu-menu-main-menu-robeson- li a:hover {border:none}
+
+/*IE9 spacing*/
+:root #main-menu .last A, #block-system-main-menu .last A, #block-menu-menu-main-menu-robeson- .last A {padding:10px 22px \0/IE9; }
+:root .lastUnround {padding-right:22px \0/IE9 !important; }
+#main-menu li A.mmAhover,
+#block-system-main-menu li A.mmAhover,
+#block-menu-menu-main-menu-robeson- li A.mmAhover {
+  background-image:none !important;
+}
+/* styling tweaks for ipads; yl 8/28/13 */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .qtip { width: 628px !important; }
+  #region-right-menu { background:none; }
+  #main-menu li A,#block-system-main-menu li A,#block-menu-menu-main-menu-robeson- li A { padding:8px 20px 6px }
+  .mmAhover { padding-right:20px !important;padding-left:20px !important; }
+  .last .mmAhover { padding-right:20px !important;padding-left:20px !important; }
+}
+.mmAhover {
+  background-color:#36404e !important; /* yl 1-8-13: added the !important */
+  color:#fff !important;
+  border:1px solid #36404e !important;
+  border-bottom:none !important; /*1px solid #e6e6e6 !important;*/
+  position:relative !important;
+  z-index: 9999 !important;
+  padding-bottom:5px !important;
+  padding-right:21px !important;
+  padding-left:21px !important;
+  text-shadow:none !important;
+  opacity:0.97
+}
+.last .mmAhover {
+  padding-right:22px !important;
+  padding-left:22px !important;
+}
+.qtip-hover {
+  background-color:#CCCCCC;
+  color:#d20134;
+}
+.firstUnround {
+  border-radius:0 !important;
+}
+.panelUpperLeftUnround{border-top-left-radius:0px  !important;}
+.panelUpperRightUnround{border-top-right-radius:0px  !important;}
+//.activer {  background-color:blue;  color:yellow;}
+/* megamenu panels */
+.qtip-contentWrapper {opacity:0.97}
+div.qtip-light{
+  border-color:#36404e !important;
+  border-style:solid;
+  border-width:1px 1px 1px 1px !important;
+}
+div.qtip-content{
+  color:#B3B3B3;
+  font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
+  border:1px solid #36404e;
+  padding:0 !important;
+  background-color:#36404e !important;
+}
+
+.mmLeftContentWrapper {}
+.mmLeftContentLeft {}
+.mmLeftContentRight {}
+
+.panel-3col-33 .panel-col-first .inside {margin:0 0 0 0 !important;width: 33.3% !important;}
+.panel-3col-33 .panel-col .inside       {margin:0 0 0 0 !important;width: 33.3% !important;}
+.panel-3col-33 .panel-col-last          {                          width: 33.3% !important;}
+.panel-3col-33 .panel-col-last .inside  {margin:0 0 0 0 !important;}
+
+.mmHeading      {color:#fff;width:250px;border-bottom:1px solid #808080; margin:21px 13px 0 13px;padding-bottom:2px;font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;}
+.mmHeadingEmpty {width:250px;border-bottom:0px solid #B3B3B3; margin:0px 13px 0 13px;font-weight:700;padding-bottom:0px;}
+.mmHeadingLink  {color:#326ABC;margin-bottom:0em;}
+.mmHeadingLink A         {color:#165A92;}
+.mmHeadingLink A:link    {color:#165A92;}
+.mmHeadingLink A:visited {color:#165A92;}
+
+.mmHeadingLinkBottom {margin-bottom:.5em;display:inline;}
+.mmHeadingLinkBottom A {color:#165A92;}
+.mmHeadingLinkBottom A:link {color:#165A92;}
+.mmHeadingLinkBottom A:visited {color:#165A92;}
+.mmHeadingLinkBottom A:hover {color:#FFF;background-color:#165A92;border-bottom:1px solid #fff}
+
+.mmContentUL {list-style-type:none;line-height:1.75em;margin:0px 13px 24px 13px;width: 250px;}
+.mmContentUL LI {list-style-image:none;}
+.mmContentUL LI A {color:#fff;}
+.mmContentUL LI A:hover {border-bottom:1px solid #fff}
+
+/* styles for landing pages */
+DL.mmenusPages  {
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+  border: 0px;
+}
+DL.mmenusPages DT {
+  position: relative;
+  left: 0px;
+  top: 1.2em;
+  width: 13em;
+  border: 0;
+  font-size:1.2em;
+}
+DL.mmenusPages DD {
+  font-size:1em;
+  margin: 0px 0px 0px 22em;
+  padding: 0;
+  border: 0;
+  font-style:normal;
+}
+div.mmenusPages {
+  display:table;
+  margin-bottom:1.5em;
+  width:100%;
+}
+div.mmenusPages .left {
+  display:table-cell;
+  vertical-align:middle;
+  clear:left;
+  width:30%;
+  font-size:1.307692307692308em;
+  padding-left:.5em;
+}
+div.mmenusPages .right {
+  display:table-cell;
+  vertical-align:middle;
+  clear:right;
+}
+div.mmenusPages .odd {
+  display:table-row;
+  vertical-align:middle;
+  background-color:#f2f2f2;
+  height:4em;
+  padding:1.5em 0;
+}
+div.mmenusPages .even {
+  display:table-row;
+  vertical-align:middle;
+  background-color:#fff;
+  height:4em;
+  padding:1.5em 0;
+}
+/*END Mega menu styling*/
+
+/*START breadcrumbs*/
+.breadcrumb {
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  padding: 0;
+  color:#999999;
+  margin-bottom:1.5em
+}
+.breadcrumb .delimiter {color:#595959}
+.breadcrumb .inline {margin:0 0.5em}
+.breadcrumb .first {margin:0 0.5em 0 0}
+.breadcrumb .last {
+  margin:0 0 0 0.5em;
+  color:#595959
+}
+.breadcrumb .first.last {margin:0}
+/*END breadcrumbs*/

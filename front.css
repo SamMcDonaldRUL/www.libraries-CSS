@@ -10,15 +10,39 @@ table {
   font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
   border-collapse:collapse
 }
-.logo-img {
-  margin:0;
-  margin-bottom:-10px
+#region-front-page-right{margin:0 4%}
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape) {
+  .logo-img {
+    margin:0 !important;
+    margin-bottom:-10px !important
+  }
+  #logo {
+    margin-top:-21px !important;
+    margin-bottom:-5px !important
+  }
+  #region-front-page-right {margin:0}
 }
-#logo {
-  margin-top:-21px;
-  margin-bottom:-5px;
-  width:auto;
-  height:90px
+@media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape) {
+  .logo-img {
+    margin:0 !important;
+    margin-bottom:-10px !important
+  }
+  #logo {
+    margin-top:-21px !important;
+    margin-bottom:-5px !important
+  }
+  #region-front-page-right {margin:0}
+}
+@media all and (min-width: 1220px) {
+  .logo-img {
+    margin:0 !important;
+    margin-bottom:-10px !important
+  }
+  #logo {
+    margin-top:-21px !important;
+    margin-bottom:-5px !important
+  }
+  #region-front-page-right {margin:0}
 }
 /* #zone-top-menu {margin-top:-14px} */
 #zone-content {padding-top:0}
@@ -200,9 +224,6 @@ _:-ms-input-placeholder, :root .front-page-news-block .views-slideshow-controls-
   line-height:1.5em
 }
 /**END What's Happeneing block**/
-
-/*temp class for front page news and exhibits block to reduce the white space - yl 5/22/18*/
-.back-up-temp {margin-top:-220px}
 
 /*START flexing up the hours block so that it shows first in mobile; this is overrriden in the layouts css for desktop*/
 #zone-content {
