@@ -360,3 +360,17 @@ div.mmenusPages .even {
 }
 .breadcrumb .first.last {margin:0}
 /*END breadcrumbs*/
+
+/*START footer*/
+#zone-footer-wrapper {padding:0}
+#region-footer .block:first-child .content {margin-top:20px}
+#footer-col1,
+#footer-col2 {margin-top:10px}
+#footer-col2 p,
+#footer-col2 ul {margin-left:80px}
+#col3-top,
+#col3-middle,
+#col3-bottom,
+#col3-last {float:right}
+#region-footer-bottom .content {margin:10px 0;padding:0}
+/*END footer*/

@@ -15,6 +15,8 @@ body {
 }
 #section-content {margin:0 10px}
 
+#region-menu {margin-left:0}
+
 /*START Header section*/
 #section-header {background-color:#36404e}
 #zone-header-menu {display:none}
@@ -32,10 +34,11 @@ body {
 }
 #region-right-menu ul#hours-account-aal {
   float:left;
-  margin:3px 0 0 25%;
+  margin:3px 0 0 22%;
   height:29px;
   width:100%
 }
+#hours-account-aal {white-space:nowrap}
 #hours-account-aal li a {
   color:#fff;
   text-decoration:none;
@@ -68,7 +71,7 @@ body {
   width:auto;
   /* background:linear-gradient(90deg, transparent 69%, #d83d0e 69%); */
   height:38px;
-  margin-top:-3px;
+  margin-top:-5px;
   border-top:1px solid #fff
 }
 /*END Hours/My Account/Ask US menu*/
@@ -84,6 +87,7 @@ body {
 	height:28px;
 	padding: 2px 16px 0 0.5em;
   padding: 2px 25px 2px;
+  padding: 2px 5% 2px;
   border-width:1px 1px 0 0;
   border-style:solid;
   border-color:#fff;
@@ -370,9 +374,12 @@ th.views-field-field-last-name-1 {
 .tabPageCol {width:33.3%; float:left;}
 .tabPageCol UL LI  {line-height: 1.75em; list-style-type: none;}
 
+/*START footer*/
 /* yl 2-28-13 - styling for the footer */
-#zone-footer-wrapper {background:#36404e}
-#region-footer .block:first-child .content {margin-top:20px}
+#zone-footer-wrapper {
+  padding:10px;
+  background:#36404e
+}
 #zone-footer {
   background:#36404e;
   font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
@@ -391,8 +398,6 @@ th.views-field-field-last-name-1 {
   font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;
   font-size:1.14285714286em;
 }
-#footer-col1,
-#footer-col2 {margin-top:10px}
 #footer-col1 ul li,
 #footer-col2 ul li {list-style:none}
 
@@ -401,8 +406,6 @@ th.views-field-field-last-name-1 {
   display: block;
   float: left;
 }
-#footer-col2 p,
-#footer-col2 ul {margin-left:80px}
 #footer-col2 ul li {margin:0}
 .col2_left {
   float:left;
@@ -420,7 +423,7 @@ th.views-field-field-last-name-1 {
 #col3-top,
 #col3-middle,
 #col3-bottom,
-#col3-last {float:right}
+#col3-last {float:left}
 #col3-top {
   padding: 10px;
   background: #d83d0e;
@@ -434,6 +437,7 @@ th.views-field-field-last-name-1 {
 #col3-middle ul li:first-child,
 #col3-middle ul li:nth-child(2) {margin-right:5px}
 #col3-middle img {width:32px;height:32px}
+#col3-bottom{clear:both}
 #col3-bottom a:hover {border:none}
 #col3-last {
   clear:both;
@@ -488,7 +492,8 @@ th.views-field-field-last-name-1 {
 #zone-footer-bottom a:visited {color:#fff;border-bottom: 1px solid #fff;}
 #zone-footer-bottom a:hover {color:#fff;}
 #region-footer-bottom .block {margin-bottom:0}
-#region-footer-bottom .content {margin:10px 0}
+#region-footer-bottom .content {margin:0 10px 10px;padding-top:10px}
+/*END footer*/
 
 /**START Connect with us block - social media bar in footer **/
 .connect-with-us {
