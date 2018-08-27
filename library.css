@@ -180,6 +180,6 @@ h2.block-title .main-title {
 /*END ROBESON page (/robeson) */
 
 /**START hide the content region**/
-#region-content {min-height:0}
+#region-content {min-height:0 !important}
 #block-system-main {margin-bottom:0}
 /**END hide the content region**/                                  

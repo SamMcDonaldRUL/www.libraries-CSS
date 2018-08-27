@@ -11,7 +11,7 @@ table {
   border-collapse:collapse
 }
 #region-front-page-right{margin:0 4%}
-/* #zone-top-menu {margin-top:-14px} */
+#zone-top-menu {margin-top:0 !important}
 #zone-content {padding-top:0}
 /* #zone-content-bottom {margin-top:30px} */
 .block {margin-bottom:1.5em}

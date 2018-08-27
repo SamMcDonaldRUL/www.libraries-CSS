@@ -33,10 +33,11 @@ body {
   height:35px;
 }
 #region-right-menu ul#hours-account-aal {
-  float:left;
-  margin:3px 0 0 22%;
-  height:29px;
-  width:100%
+  /* float:left; */
+  margin:5px 0 0 20vw;
+  margin:0 0 0 20vw;
+  /* height:29px; */
+  /* width:100% */
 }
 #hours-account-aal {white-space:nowrap}
 #hours-account-aal li a {
@@ -51,19 +52,39 @@ body {
   list-style-type: none;
   padding:0 0 0 10px;
 }
-#region-right-menu li:nth-child(1) {padding:0 15px}
+#region-right-menu li:nth-child(1) {
+  padding:0 5vw;
+  padding:0;
+  display:inline-block;
+  width:16vw;
+  margin-left:6vw
+}
 #region-right-menu li:nth-child(2) {
   border-style:solid;
   border-color:#fff;
   border-width:0 1px;
-  padding:7px 13px
+  padding:7px 5vw;
+  padding:5px 0 5px 5vw;
+  display:inline-block;
+  width:27vw
 }
 #region-right-menu li:last-child {
-  padding:6px 25% 8px 7%;
-  margin:-4px
+  padding: 8px 5vw 6px;
+  margin: -4px;
+  border-right: 1px solid white;
 }
 #region-right-menu li:last-child,
-#region-right-menu li:last-child a{background:#d83d0c}
+#region-right-menu li:last-child a{
+  background: #d83d0c;
+  display: inline-block;
+  padding: 0;
+  width: 18vw;
+  padding-left: 3vw;  
+}
+#region-right-menu li:last-child a {
+  padding-top:5px;
+  padding-bottom:3px
+}
 #region-right-menu li img{vertical-align:middle;display:none}
 #region-right-menu li a:hover {border:none}
 #region-right-menu .content {
@@ -71,7 +92,7 @@ body {
   width:auto;
   /* background:linear-gradient(90deg, transparent 69%, #d83d0e 69%); */
   height:38px;
-  margin-top:-5px;
+  /* margin-top:-3px; */
   border-top:1px solid #fff
 }
 /*END Hours/My Account/Ask US menu*/
@@ -82,20 +103,22 @@ body {
 	box-shadow:none;
 	background:#cc0033;
 	border-radius:0px;
-	width: 10%;
+	/* width: 10%; */
+  width:20vw;
 	font-size:16px;
-	height:28px;
-	padding: 2px 16px 0 0.5em;
-  padding: 2px 25px 2px;
-  padding: 2px 5% 2px;
+	height:26px;
+	/* padding: 2px 16px 0 0.5em; */
+  /* padding: 2px 25px 2px; */
+  /* padding: 2px 5% 2px; */
   border-width:1px 1px 0 0;
   border-style:solid;
   border-color:#fff;
+  padding-top:5px;
 }
-.responsive-menus.responsified .responsive-menus-simple {background:#cc0033;}
-.responsive-menus.responsified {clear:none; height: 0px;float: left;margin-top: -33px;}
-.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {margin-top: 27px;}
-#zone-top-menu {height: 1.8em; background: #36404e;height:33px;}
+.responsive-menus.responsified .responsive-menus-simple {background:#cc0033}
+.responsive-menus.responsified {clear:none; height: 0px;float: left;margin-top: -33px}
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {margin-top: 27px}
+#zone-top-menu {height: 1.8em; background: #36404e;height:33px}
 /*END responsive menu*/
 
 /*START Links stylying*/
@@ -841,6 +864,7 @@ fieldset#edit-contact {display:none}
 
 /*START styles for the faculty-staff directory and faculty directory*/
 /*yl 3-20-15; styling for the name search box on the faculty staff directory */
+.fac-staff-dir .view-content {overflow-x:auto}
 .fac-staff-dir th.views-field-field-last-name-1 a,
 .fac-staff-dir th.views-field-mail a,
 .fac-staff-dir th.views-field-field-function-title a,
@@ -1173,3 +1197,93 @@ input[type="week"] {
   font-size: 1rem
 }
 /*END accessibility modal*/
+
+/*START Mini-sites (book) styling*/
+.book-navigation {display:none}
+.block-book-navigation {margin-top:5px}
+#block-book-navigation a:link {
+  font-family:'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
+  font-size:1rem;
+  line-height:1.5rem;
+  border:none
+}
+#block-book-navigation a:hover {border-bottom:1px solid #0754cc}
+#block-book-navigation ul.menu > li.expanded > a.active-trail:hover {margin-bottom:-1px}
+#block-book-navigation ul.menu > li.expanded > a.active-trail.active:hover {margin-bottom:0px}
+#block-book-navigation a.active:hover {border:none}
+#block-book-navigation ul.menu li {
+  list-style:none;
+  margin:0.2em 0px 0.5em 5px;
+  padding:0
+}
+#block-book-navigation ul.menu li ul.menu li.first {margin-top:0.5em}
+#block-book-navigation ul.menu li.active-trail {margin-left:0}
+/*add arrow down for collapsed links*/
+#block-book-navigation ul.menu li.collapsed a::after {
+  content:"";
+  border: solid #0754cc;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  float:right;
+  margin-top:5px;
+  margin-right:10px
+}
+/*add arrow up for expanded links*/
+#block-book-navigation ul.menu li.expanded > a.active-trail.active::after {
+  content:"";
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  float:right;
+  margin-top:10px;
+  margin-right:5px
+}
+#block-book-navigation ul.menu li.expanded > a.active-trail::after {
+  content:"";
+  border: solid #0754cc;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  float:right;
+  margin-top:10px;
+  margin-right:5px
+}
+#block-book-navigation ul.menu li ul.menu {margin-left:-5px}
+#block-book-navigation ul.menu li ul.menu li {margin-left:25px;padding-right:0}
+#block-book-navigation ul.menu li ul.menu li a.active-trail.active {
+  padding-left: 20px;
+  margin-left: -20px
+}
+#block-book-navigation ul.menu li ul.menu li ul.menu li a.active-trail.active {
+  padding-left: 40px;
+  margin-left: -40px
+}
+#block-book-navigation h2.block-title {
+  padding: 5px;
+  padding-bottom: 0.2em
+}
+#block-book-navigation .block-title .book-title.active {line-height:1.5rem}
+#block-book-navigation .block-title .book-title.active,
+#block-book-navigation .active-trail.active {
+  background:#285e71;
+  color:#fff;
+  display:block;
+  padding:5px;
+  margin-left:0
+}
+#block-book-navigation .block-title .book-title.active {margin-left:-5px}
+#block-book-navigation .expanded.active-trail.active {margin-left:5px}
+#block-book-navigation a.active-trail {
+  margin-left:5px;
+  display:block
+}
+#block-book-navigation li.expanded li.expanded a.active-trail {margin:0}
+/*END Mini-sites (book) styling*/

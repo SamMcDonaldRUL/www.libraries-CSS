@@ -6,10 +6,10 @@
 /*START Header section*/
 header {background-color:#36404e}
 #region-branding {margin:-12px 20px -12px 0}
-#section-content {padding:25px 0}
+#section-content {padding:20px 0}
 #region-content {min-height:478px}
 #zone-content {
-  padding-top:7px;
+  padding-top:0px;
   padding-bottom:20px;
 }
 .zone {background-color:#fff}
@@ -36,6 +36,7 @@ header {background-color:#36404e}
 .logo-img a:hover {border:none}
 #zone-menu-wrapper {background:#cc0033}
 #zone-menu {
+  margin-top:2px;
   background:#CC0033;
   color:#fff;
   height:37px;
@@ -109,7 +110,8 @@ header {background-color:#36404e}
 }
 /*END styling for the top right menu links (Rutgers Home, Search Rutgers) */
 
-/*END Hours/My Account/Ask US menu*/
+/*START Hours/My Account/Ask US menu*/
+#region-right-menu {float:right}
 #region-right-menu ul#hours-account-aal {
   float:right;
   margin:3px 0 0 0;
@@ -118,10 +120,26 @@ header {background-color:#36404e}
   width:auto
 }
 /* #hours-account-aal li {border:none} */
-#region-right-menu li:nth-child(2) {border:none}
-#region-right-menu li:last-child {padding:6px 15px 8px}
+#region-right-menu li:nth-child(1) {
+  padding:0 0 0 15px;
+  display:initial
+}
+#region-right-menu li:nth-child(2) {
+  border:none;
+  padding:7px 13px;
+  display:initial
+}
+#region-right-menu li:last-child {
+  padding:6px 15px 8px;
+  border:none;
+  display:initial;
+}
 #region-right-menu li:last-child,
 #hours-account-aal li:last-child a {background:none}
+#hours-account-aal li:last-child a {
+  display:initial;
+  padding-left:8px
+}
 #region-right-menu li img {vertical-align:middle;display:inline}
 #hours-account-aal li:first-child img {
   width:22px;
@@ -139,7 +157,10 @@ header {background-color:#36404e}
   height:28px;
   margin:3px 5px 3px 0
 }
-#region-right-menu .content {border:none}
+#region-right-menu .content {
+  border:none;
+  height:38px;
+}
 /*END Hours/My Account/Ask US menu*/
 
 /*START Mega menu styling*/
@@ -349,7 +370,7 @@ div.mmenusPages .even {
   letter-spacing: 0.5px;
   padding: 0;
   color:#999999;
-  margin-bottom:1.5em
+  margin-bottom:0.5em
 }
 .breadcrumb .delimiter {color:#595959}
 .breadcrumb .inline {margin:0 0.5em}
