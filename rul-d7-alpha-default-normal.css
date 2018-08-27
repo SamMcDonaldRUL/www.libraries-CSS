@@ -1,10 +1,754 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
- 
- /* START Hours/My Account/Ask US menu*/
-#region-right-menu .content {
-  width:auto;
-  background:linear-gradient(90deg, transparent 77%, #d83d0e 77%);
+
+ html,body {
+  overflow-y:visible;
+  overflow-x:visible;
 }
-/* END Hours/My Account/Ask US menu*/
+ /* header-banner area */
+ header {background-color:#36404e}
+#region-branding {margin:-12px 20px -12px 0}
+#section-content {padding:20px 0}
+#region-content {min-height:478px}
+#zone-content {padding-bottom:20px}
+.zone {background-color:#fff}
+#zone-top-menu {margin-top:10px}
+#zone-header-menu {
+  background:none;
+  border:none;
+  box-shadow:none;
+}
+#zone-branding {background-color:#36404e}
+#logo {
+  margin-top:-5px;
+  margin-bottom:-15px;
+  width:auto;
+  height:90px
+}
+.logo-img {
+  margin-top:18px;
+  margin-bottom:-10px
+}
+.grid-7 .logo-img {margin-left:0}
+.logo-img a:hover {border:none}
+#zone-menu-wrapper {background:#cc0033}
+#zone-menu {
+  background:#CC0033;
+  color:#fff;
+  height:37px;
+}
+/* end header-banner area */
+
+ /* megamenu nav bar */
+#region-menu {
+  padding:3px 0 0;
+  margin-right:0;
+  height:30px;
+}
+/* styling for the mega menus (left links in the red bar), add div ids to this section for new menus added; yl 9/18/13 */
+#main-menu,
+#block-system-main-menu,
+#block-menu-menu-main-menu-robeson- {
+  display:block;
+  padding-bottom:1px; /*yl 1-8-13: added padding-bottom for anchor padding on the menus when they open */
+  padding-top:5px;
+  margin-bottom:0;
+}
+ul#main-menu,
+#block-system-main-menu ul,
+#block-menu-menu-main-menu-robeson- ul{
+  white-space:nowrap;
+  margin-left:20px
+}
+#main-menu li,
+#block-system-main-menu li,
+#block-menu-menu-main-menu-robeson- li{
+  padding:0;
+  white-space:nowrap;
+  display: inline;
+}
+#main-menu li.first.leaf,
+#block-system-main-menu li.first.leaf,
+#block-menu-menu-main-menu-robeson- li.first.leaf{margin-left:0}
+#main-menu li.last.leaf img,
+#block-system-main-menu li.last.leaf img,
+#block-menu-menu-main-menu-robeson- li.last.leaf img{
+  vertical-align:sub;
+  width:20px
+}
+#main-menu li,
+#block-system-main-menu li,
+#block-menu-menu-main-menu-robeson- li {white-space:nowrap}
+#main-menu li A,
+#block-system-main-menu li A,
+#block-menu-menu-main-menu-robeson- li A {
+  color:#FFF;
+  background-color:#cc0033;
+  padding:10px 22px 0px; /* yl 1-7-13: original values: 4px 12px (padding top, right, bottom, & top); max out space for 8 column grid */
+  /* sm  made top padding from 10 to 11 */
+  text-decoration:none;
+  margin-top:0px;
+  font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;
+  font-weight:500;
+  -webkit-text-size-adjust: none;
+  font-size:16px;
+  border-bottom:none
+}
+#main-menu li a:hover,
+#block-system-main-menu li a:hover,
+#block-menu-menu-main-menu-robeson- li a:hover {border:none}
+
+/*IE9 spacing*/
+:root #main-menu .last A, #block-system-main-menu .last A, #block-menu-menu-main-menu-robeson- .last A {padding:10px 22px \0/IE9; }
+:root .lastUnround {padding-right:22px \0/IE9 !important; }
+#main-menu li A.mmAhover,
+#block-system-main-menu li A.mmAhover,
+#block-menu-menu-main-menu-robeson- li A.mmAhover {
+  background-image:none !important;
+}
+/* styling tweaks for ipads; yl 8/28/13 */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .qtip { width: 628px !important; }
+  #region-right-menu { background:none; }
+  #main-menu li A,#block-system-main-menu li A,#block-menu-menu-main-menu-robeson- li A { padding:8px 20px; }
+  .mmAhover { padding-right:20px !important;padding-left:20px !important; }
+  .last .mmAhover { padding-right:20px !important;padding-left:20px !important; }
+}
+.mmAhover {
+  background-color:#36404e !important; /* yl 1-8-13: added the !important */
+  color:#fff !important;
+  border:1px solid #36404e !important;
+  border-bottom:none !important; /*1px solid #e6e6e6 !important;*/
+  position:relative !important;
+  z-index: 9999 !important;
+  padding-bottom:5px !important;
+  padding-right:21px !important;
+  padding-left:21px !important;
+  text-shadow:none !important;
+  opacity:0.97
+}
+.last .mmAhover {
+  padding-right:22px !important;
+  padding-left:22px !important;
+}
+.qtip-hover {
+  background-color:#CCCCCC;
+  color:#d20134;
+}
+.firstUnround {
+  border-radius:0 !important;
+}
+.panelUpperLeftUnround{border-top-left-radius:0px  !important;}
+.panelUpperRightUnround{border-top-right-radius:0px  !important;}
+//.activer {  background-color:blue;  color:yellow;}
+/* megamenu panels */
+.qtip-contentWrapper {opacity:0.97}
+div.qtip-light{
+  border-color:#36404e !important;
+  border-style:solid;
+  border-width:1px 1px 1px 1px !important;
+}
+div.qtip-content{
+  color:#B3B3B3;
+  font-family: 'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
+  border:1px solid #36404e;
+  padding:0 !important;
+  background-color:#36404e !important;
+}
+
+.mmLeftContentWrapper {}
+.mmLeftContentLeft {}
+.mmLeftContentRight {}
+
+.panel-3col-33 .panel-col-first .inside {margin:0 0 0 0 !important;width: 33.3% !important;}
+.panel-3col-33 .panel-col .inside       {margin:0 0 0 0 !important;width: 33.3% !important;}
+.panel-3col-33 .panel-col-last          {                          width: 33.3% !important;}
+.panel-3col-33 .panel-col-last .inside  {margin:0 0 0 0 !important;}
+
+.mmHeading      {color:#fff;width:250px;border-bottom:1px solid #808080; margin:21px 13px 0 13px;padding-bottom:2px;font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;}
+.mmHeadingEmpty {width:250px;border-bottom:0px solid #B3B3B3; margin:0px 13px 0 13px;font-weight:700;padding-bottom:0px;}
+.mmHeadingLink  {color:#326ABC;margin-bottom:0em;}
+.mmHeadingLink A         {color:#165A92;}
+.mmHeadingLink A:link    {color:#165A92;}
+.mmHeadingLink A:visited {color:#165A92;}
+
+.mmHeadingLinkBottom {margin-bottom:.5em;display:inline;}
+.mmHeadingLinkBottom A {color:#165A92;}
+.mmHeadingLinkBottom A:link {color:#165A92;}
+.mmHeadingLinkBottom A:visited {color:#165A92;}
+.mmHeadingLinkBottom A:hover {color:#FFF;background-color:#165A92;border-bottom:1px solid #fff}
+
+.mmContentUL {list-style-type:none;line-height:1.75em;margin:0px 13px 24px 13px;width: 250px;}
+.mmContentUL LI {list-style-image:none;}
+.mmContentUL LI A {color:#fff;}
+.mmContentUL LI A:hover {border-bottom:1px solid #fff}
+/* end of megamenustyles */
+
+/* styles for landing pages */
+DL.mmenusPages  {
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+  border: 0px;
+}
+DL.mmenusPages DT {
+  position: relative;
+  left: 0px;
+  top: 1.2em;
+  width: 13em;
+  border: 0;
+  font-size:1.2em;
+}
+DL.mmenusPages DD {
+  font-size:1em;
+  margin: 0px 0px 0px 22em;
+  padding: 0;
+  border: 0;
+  font-style:normal;
+}
+div.mmenusPages {
+  display:table;
+  margin-bottom:1.5em;
+  width:100%;
+}
+div.mmenusPages .left {
+  display:table-cell;
+  vertical-align:middle;
+  clear:left;
+  width:30%;
+  font-size:1.307692307692308em;
+  padding-left:.5em;
+}
+div.mmenusPages .right {
+  display:table-cell;
+  vertical-align:middle;
+  clear:right;
+}
+div.mmenusPages .odd {
+  display:table-row;
+  vertical-align:middle;
+  background-color:#f2f2f2;
+  height:4em;
+  padding:1.5em 0;
+}
+div.mmenusPages .even {
+  display:table-row;
+  vertical-align:middle;
+  background-color:#fff;
+  height:4em;
+  padding:1.5em 0;
+}
+
+/* end of styles for landing pages */
+
+/* yl 12/5/12 - styling for the right menu links (Hours, My Account, Accessibility (icon)) */
+#region-right-menu {
+  margin:0;
+  height:35px;
+
+}
+#region-right-menu ul#hours-account-aal {
+  float:right;
+  margin:3px 0 0 0;
+  /* overflow:auto; */
+}
+#hours-account-aal li:first-child img {
+  width:22px;
+  height:22px;
+  margin:0 5px 5px 0
+}
+#hours-account-aal li:nth-child(2) img {
+  width:22px;
+  height:22px;
+  margin:0 5px 5px 0;
+  transform: rotate(30deg);
+}
+#hours-account-aal li:nth-child(3) img {
+  width:28px;
+  height:28px;
+  margin:3px 5px 3px 0
+}
+#hours-account-aal li a {
+  color: #fff;
+  text-decoration:none;
+  font-size:16px;
+  background:#36404e;
+}
+
+#region-right-menu li {
+  display: inline;
+  list-style-type: none;
+  padding:0 0 0 10px
+}
+#region-right-menu li:last-child {padding:0 15px 0 10px}
+#region-right-menu li img{vertical-align:middle}
+#region-right-menu li a:hover {border:none}
+#region-right-menu .content {
+  margin:0;
+  width:auto;
+  background:linear-gradient(90deg, transparent 78%, #d83d0e 78%);
+  height:38px;
+  margin-top:-3px
+}
+/* end right menu links */
+
+/* yl 2-1-13 - styling for the secondary main menu (site search box, my account, hours, accessibility) region*/
+#block-search-form, #block-block-23, #block-block-26 {
+  float: left;
+  margin: 0;
+  padding-left:75px;
+  padding-top:4px;
+  position: relative;
+}
+#block-block-26 {}
+#block-menu-menu-secondary-main-menu, #block-menu-menu-alternate-sub-page-secondar {
+  float:right;
+  margin:0;
+  padding-top:3px;
+  white-space: nowrap;
+}
+#edit-search-block-form--2 {
+  width:100px;
+}
+/* end styling for the secondary main menu  */
+
+/* yl 2-1-13 - styling the site search box */
+#search-block-form .form-text, #block-block-23 .form-text, #block-block-26 .form-text{
+  color:#666666;
+  font-style:italic;
+  font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;
+  font-size:0.8461538461538462em;
+  width:100px;
+}
+#block-menu-menu-secondary-main-menu  ul.menu li{
+  margin:0 0 0 1em;
+}
+#block-menu-menu-secondary-main-menu  ul.menu li.leaf{
+  margin-left:12px;
+}
+#block-menu-menu-alternate-sub-page-secondar li {
+  margin-left:15px;
+}
+.form-actions input, .cse_button {
+  margin:0;
+  border-radius:5px;
+  font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;
+  font-size:0.8461538461538462em;
+  font-weight:400;
+  padding:2px 5px;
+}
+#block-block-26 .form-actions input {
+  padding:0;
+  border-radius:0;
+  margin-left: -20px;
+}
+#block-block-26 .form-actions input:hover {
+  background:none;
+}
+/* end styling the site search box */
+
+/* descriptive blocks are the floating set of blocks as on the _main_ researchers page */
+div.descriptive-block            {width:218px;height:220px;margin-left:10px;margin-right:10px;border:1px solid #CCC;float:left;position:relative;}
+div.descriptive-block  h2        {border:0px;border-bottom:1px solid #CCC;}
+div.descriptive-block div.logo   {padding:10px;float:right;}
+div.descriptive-block-text       {width:210px;padding:.5em;}
+div.descriptive-block-more       {position:absolute;top:200px;width:220px;}
+div.descriptive-block-more DIV.more-link {padding:0 30px 0 20px;}
+div.descriptive-block-leftmost   {margin-left:0px;}
+div.descriptive-block-rightmost  {margin-right:0px}
+div.descriptive-block-top-row    {margin-top:0;}
+div.descriptive-block-bottom-row {margin-top:1.5em;margin-bottom:1.5em;}
+
+/* right column for pages that don't have custom template for right columns */
+DIV.descriptive-page-right-col                           {width:300px;float:right;margin-left:20px;}
+DIV.descriptive-page-right-box-nav                       {margin-bottom:24px;padding:15px;border:1px solid #ccc;}
+DIV.descriptive-page-right-box-nav H2.plain              {background-color:transparent;border:0;padding-left:0;}
+DIV.descriptive-page-right-box-nav-content               {border:0px solid #CCC;border-top:none;padding:0}
+DIV.descriptive-page-right-box-nav-content UL            {margin-left:-1.2em;margin-bottom:0;padding-top:0}
+DIV.descriptive-page-right-box-nav-content UL LI         {list-style:none outside none}
+DIV.descriptive-page-right-box-nav-content UL LI.current {font-weight:700;}
+DIV.descriptive-page-right-box-nav-content UL LI.last    {border-bottom:none;}
+
+DIV.descriptive-page-right-box-content  P.last           {margin-bottom:0}
+DIV.descriptive-page-right-box-content UL                {margin-bottom:0}
+
+.descriptive-page-right-box {
+  border:1px solid #ccc;
+  padding:15px;
+  margin-bottom:24px;
+}
+.descriptive-page-right-box-nav h2.block-title,
+.descriptive-page-right-box h2.block-title {
+  background:none;
+  border:none;
+  padding:0;
+  font-size:16px;
+  font-weight:700;
+  margin-bottom:1em;
+}
+/* end descriptive blocks  */
+
+/* START styling for the landing pages */
+.landing-page ul,
+#library-collections,
+#popular-resources,
+#services-tools-services,
+#services-tools-tools,
+#info-for {padding:0}
+#library-collections,
+#services-tools-services,
+#info-for {
+  column-count:2;
+  column-gap:20px
+}
+.landing-page ul li,
+#library-collections li,
+#popular-resources li,
+#services-tools-services li,
+#services-tools-tools li,
+#info-for li {
+  list-style:none;
+  margin-bottom:24px;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  -o-column-break-inside: avoid;
+  -ms-column-break-inside: avoid;
+  column-break-inside: avoid;
+  page-break-inside: avoid
+}
+.link-heading {
+  font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;
+  font-weight:400;
+  font-size:1.076923076923077em;
+  line-height:1.392857142857143em;
+  padding:0 0 3px 0;
+  margin-bottom:0;
+  display:block;
+}
+/* .link-heading a, */
+.link-heading-text {
+  padding-bottom:5px;
+  padding-top:5px
+}
+.no-left-margin {margin-left:0 !important}
+.no-right-margin {margin-right:0 !important}
+.no-margins {
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+.landing-page div {margin-bottom:1.5em}
+.landing-page-image {text-align:right}
+.right_arrow {
+  float:right;
+  display:none
+}
+.landing-page h3 {color:#222}
+/* END styling for the landing pages */
+
+/*styling for the libraries and centers page and maps and directions page*/
+.lib_address {
+  margin-top:5px;
+  float:left;
+}
+.lib_pic {
+  margin-top:5px;
+  float:right;
+}
+.right_arrow_map {
+  float:right;
+}
+.right_arrow_map img {
+  height:21px;
+}
+.lib_center_info {
+  min-height:185px;
+}
+.lib_center_info,
+.campus_info {
+  clear: both;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.campus_info {
+  border:1px solid #ccc;
+  overflow:hidden;
+  margin-bottom:1em;
+}
+.campus_info .lib_block {
+  width:50%;
+  float:left;
+  min-height:325px;
+}
+.campus_info .lib_block_info {
+  min-height: 325px;
+  padding-top: 25px;
+  margin-right:5px;
+}
+.campus_info h2.block-title {
+  border:none;
+}
+.campus_info .lib_name {
+  padding:5px;
+  font-weight:700;
+}
+.campus_info .lib_map img {
+  margin:0 5px;
+  border:2px solid #ccc;
+  height:200px;
+}
+.campus_info .lib_address {
+  margin:5px;
+}
+.campus_info .lib_phone {
+  float:left;
+  margin:5px 5px 5px 10px;
+}
+a.campus_map_link {
+  margin-left:100px;
+  float:right;
+}
+ul.indented  {
+  padding-left:50px;
+}
+/* end : for libraries and centers page and maps and directions page */
+
+/* yl 7/25/13 - styling for the top header menu links */
+#region-top-menu {
+  margin:0;
+}
+#region-top-menu div {
+  margin:5px 0;
+}
+#region-top-menu .first.leaf {
+  margin:0;
+}
+#region-top-menu .top-menu-borders {
+  border-left:1px solid #555555;
+  border-right:1px solid #555555;
+  padding: 0 10px;
+}
+#region-top-menu li {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+#region-top-menu .content {
+  margin:0;
+  width:auto;
+}
+#region-top-menu .content a {
+  color: #555555;
+  text-decoration:none;
+  font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;
+  font-size:0.9em;
+}
+#region-top-menu .content a:hover {
+  color:#555555;
+}
+/* end: styling for the top header menu links */
+
+/*START styling for the top right menu links (Rutgers Home, Search Rutgers) */
+#region-top-right-menu {margin:0 0 0 40px}
+#region-top-right-menu div {margin:5px 0}
+#region-top-right-menu .first.leaf {margin:0}
+#region-top-right-menu li {
+  display: inline;
+  list-style-type: none;
+  padding:0px 6px 0 8px;
+  margin:0;
+  border-left:1px solid #fff;
+}
+#region-top-right-menu li.first.leaf {border:none}
+#region-top-right-menu li.last.leaf {padding-right:0}
+#region-top-right-menu .content {
+  margin:0;
+  width:auto;
+  float:right;
+}
+#region-top-right-menu .content a {
+  color: #fff;
+  text-decoration:none;
+  font-size:0.9em;
+}
+#region-top-right-menu .content a:hover {
+  color:#fff;
+  border-bottom:1px solid #fff
+}
+.top-header-divider img {
+  width:20px;
+  height:20px;
+}
+/*END styling for the top right menu links (Rutgers Home, Search Rutgers) */
+
+/*START back-to-top button (appears on the bottom of the page)*/
+#back-to-top,
+#back-to-top1 {
+  bottom: 0;
+  cursor: pointer;
+  position: fixed;
+  width: 40px;
+  z-index: 500;
+  margin-left:960px
+}
+#back-to-top1 {
+  margin-left:1040px;
+  width: 48px
+}
+.back-to-top__arrow {
+  /* border-left: 39px solid transparent; */
+  /* border-right: 39px solid transparent; */
+  /* border-bottom: 10px solid #cc0033; */
+  /* height: 0; */
+  /* width: 0; */
+
+  /* width:50px; */
+  /* background:#fff; */
+
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+}
+.back-to-top1__arrow {
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  border-bottom: 24px solid #000;
+}
+.back-to-top1__arrow-inner {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+  position: relative;
+  top: 24px;
+  left: -20px;
+  width:0
+}
+.back-to-top__arrow img {
+  width: 24px;
+  /* margin: 0 12px; */
+  /* background: #fff; */
+
+  margin-left: -12px;
+  margin-bottom: -20px;
+}
+.back-to-top1__text{display:block;}
+.back-to-top__text,
+.back-to-top1__text {
+  background-color: #fff;
+  color:#000;
+  height: 30px;
+  /* padding-top:5px; */
+  /* line-height: 28px; */
+  text-align: center;
+  text-transform: uppercase
+}
+.back-to-top1__text {
+  margin:0 4px;
+  font-size:1rem;
+  line-height:1rem;
+  font-family:'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif
+}
+.back-to-top1__arrow {
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #fff
+}
+.back-to-top1__arrow-inner {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+  position: relative;
+  top: 20px;
+  left: -20px;
+  width:0
+}
+.back-to-top2__arrow-inner {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #000;
+  position: relative;
+  top: 10px;
+  left: -15px;
+  width: 0;
+}
+.back-to-top3__arrow-inner {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  position: relative;
+  top: 15px;
+  left: -10px;
+  width: 0;
+}
+.back-to-top1__text {margin:0}
+/*END back-to-top button (appears on the bottom of the page)*/
+
+#region-mini-searchtabs {display:inline;}
+#main-menu-site-search {display:inline;}
+
+/* unhide floating back to top */
+#back-to-top1 {display:block;}
+
+/* footer stuff */
+#footer-col2 p,
+#footer-col2 ul {margin-left:0px}
+#col3-top,
+#col3-middle,
+#col3-bottom,
+#col3-last {float:right;clear:both}
+#footer-col1 .col-headers {padding-top:0em;}
+
+/* unhide mega menus  and then hide white border-padding  https://www.drupal.org/node/1820858 */
+.qtip-content *[class*='menu-minipanel-'] {
+	display: block !important;
+}
+.qtip-content {padding:1em;}
+
+/* unhide back to top */
+#back-to-top1 {display:inline;}
+
+/* unhide social media icons, other icons, staff resources link */
+#col3-middle,
+#col3-bottom,
+#col3-last		 {display:inline;}
+
+/* make orange staff narrower   undo how? */
+#col3-top {}
+
+#zone-top-menu {height:33px;background: #36404e;}
+
+/* hours my account aal */
+#block-block-65 {float:right;margin-right: -21px;}
+#nav-hours    {width:81px;height: 36px;float:left;padding-left:0px;}
+#nav-account  {width:134px;height: 36px;float:left;}
+#nav-aal      {width:100px;height: 33px;float:left;background:#d83d0e;}
+#nav-hours  img  {display: inline;                         width: 22px;height: 22px;margin: 7px 5px 5px 0;}
+#nav-account img {display: inline;padding: 0px 0px 8px 6px;width: 22px;height: 22px;margin: 6px 5px 5px 0;transform: rotate(30deg);}
+#nav-aal img     {width: 28px;height: 28px;margin: 0px;padding:4px 9px 0px 6px;}
+#nav-hours-link-text   {display: inline-block;padding: 0px;color:#FFF;margin: 5px 6px 3px 4px;}
+#nav-account-link-text {display: inline-block;padding: 0px;color:#FFF;margin: 0 0 9px 4px;}
+#nav-aal-link-text     {display: inline-block;padding-bottom: 5px;color:#FFF;width:50px;font-size:16px;margin:0px;}
+#nav-hours a:hover,
+#nav-account a:hover,
+#nav-aal a:hover {border:0px;}
+
+/* front page */
+#zone-header-menu {display:block;}
+.block-83 h2 {margin-top:0em;}
+#frontTopResourcesServices{
+   display:flex;
+   flex-flow:row nowrap;
+   justify-content: flex-start;
+}
+.resources-services-left   {order:1;}
+.resources-services-right  {order:2;}
+#frontTopResourcesServices {clear:none;}
+#frontTopRowSearch {width:600px;}
+#frontTopHours {width:300px; float:right}
+/*temp class for front page news and exhibits block to reduce the white space - yl 5/22/18*/
+.back-up-temp {margin-top:-175px}
+
+/* encyclopedias */
+.encyclopedia-list {column-count:2;width:590px;clear:initial;}
