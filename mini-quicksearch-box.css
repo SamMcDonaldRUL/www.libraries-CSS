@@ -1,30 +1,28 @@
 /* styling for the mini-quicksearch box */
 #region-mini-searchtabs {
-  margin-left:20px;
+  margin-left:0;
   margin-right:0
 }
 .region-mini-searchtabs-inner {padding-top:7px}
-#qs-container {
-  margin-top:10px;
-  float:right
-}
+#qs-container {margin-top:0px}
 #search-box {
   background:#fff;
   max-height:60px
 }
 #primoQueryTemp {
-  padding: 0 10px;
+  height:8vw;
+  float:left;
+  padding: 0 10px 0 20px;
   margin: 0;
   border: none;
   box-shadow: none !important;
-  width:280px;
-  border-radius:2px 0 0 2px
+  width:86vw;
+  border-radius:none !important
 }
 ::-webkit-input-placeholder{color:#222}
 :-moz-placeholder{color:#222;opacity:1}
 ::-moz-placeholder{color:#222;opacity:1}
 :-ms-input-placeholder{color:#222}
-#search_scope {display:none}
 #scope-suggestion {
   display:none;
   background:#fff;
@@ -57,20 +55,47 @@
   background:#aaa
 }
 img#go {
-  width: 27px;
-  height: 26px;
+  width: 8vw;
+  height: 7.3vw;
   border: 0;
   background-color: #cc0033;
-  border-radius: 0 2px 2px 0;
-  float: right;
-  padding: 0 3px 3px 0
+  border-radius: 0 !important;
+  padding: 0 5px 3px 0
 }
 img#go:hover {cursor:pointer}
-.qs-label {  
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden
+
+/*narrow*/
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape) {  
+  #qs-container {
+    margin-top:10px;
+    float:right
+  }
+  #primoQueryTemp {
+    height:auto;
+    padding: 5px 10px 6px;
+    margin: 0;
+    border: none;
+    float:none;
+    box-shadow: none !important;
+    width:190px;
+    border-radius:2px 0 0 2px
+  }
+  img#go {
+    width: 27px;
+    height: 26px;
+    border: 0;
+    background-color: #cc0033;
+    border-radius: 0 2px 2px 0;
+    float: right;
+    padding: 0 3px 3px 0
+  }
+  #region-mini-searchtabs {
+    margin-left:20px;
+    margin-right:0
+  }
+}
+
+/*normal*/
+@media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape) {
+  #primoQueryTemp {width:280px}
 }
