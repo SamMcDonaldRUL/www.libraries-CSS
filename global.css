@@ -16,12 +16,12 @@ body {
 }
 header {background-color:#36404e}
 #region-branding {margin:-12px 20px -12px 0}
-#section-content {padding:25px 0}
+#section-content {padding:20px 0}
 #region-content {min-height:478px}
-#zone-content {
-  padding-top:7px;
-  padding-bottom:20px;
-}
+#zone-content {padding-bottom:20px}
+                  
+                      
+ 
 .zone {background-color:#fff}
 #zone-top-menu {background-color:#36404e}
 #zone-header-menu {
@@ -536,11 +536,11 @@ div.mmenusPages .even {
   background:none;
 }
 .breadcrumb {
-  font-size: 0.9em;
-  letter-spacing: 0.5px;
+  font-size: 0.85em;
+  /* letter-spacing: 0.5px; */
   padding: 0;
   color:#999999;
-  margin-bottom:1.5em
+  margin-bottom:0.5em
 }
 .breadcrumb .delimiter {color:#595959}
 .breadcrumb .inline {
@@ -793,7 +793,7 @@ th.views-field-field-last-name-1 {
 #col3-top,
 #col3-middle,
 #col3-bottom,
-#col3-last {float:right}
+#col3-last {float:right;clear:both}
 #col3-top {
   padding: 10px;
   background: #d83d0e;
@@ -1608,3 +1608,93 @@ input[type="week"] {
   font-size: 1rem
 }
 /*END accessibility modal*/
+
+/*START Mini-sites (book) styling*/
+.book-navigation {display:none}
+.block-book-navigation {margin-top:5px}
+#block-book-navigation a:link {
+  font-family:'Quattrocento Sans', Candara, 'Gill Sans', Optima, Helvetica, sans-serif;
+  font-size:1rem;
+  line-height:1.5rem;
+  border:none
+}
+#block-book-navigation a:hover {border-bottom:1px solid #0754cc}
+#block-book-navigation ul.menu > li.expanded > a.active-trail:hover {margin-bottom:-1px}
+#block-book-navigation ul.menu > li.expanded > a.active-trail.active:hover {margin-bottom:0px}
+#block-book-navigation a.active:hover {border:none}
+#block-book-navigation ul.menu li {
+  list-style:none;
+  margin:0.2em 0px 0.5em 5px;
+  padding:0
+}
+#block-book-navigation ul.menu li ul.menu li.first {margin-top:0.5em}
+#block-book-navigation ul.menu li.active-trail {margin-left:0}
+/*add arrow down for collapsed links*/
+#block-book-navigation ul.menu li.collapsed a::after {
+  content:"";
+  border: solid #0754cc;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  float:right;
+  margin-top:5px;
+  margin-right:10px
+}
+/*add arrow up for expanded links*/
+#block-book-navigation ul.menu li.expanded > a.active-trail.active::after {
+  content:"";
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  float:right;
+  margin-top:10px;
+  margin-right:5px
+}
+#block-book-navigation ul.menu li.expanded > a.active-trail::after {
+  content:"";
+  border: solid #0754cc;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  float:right;
+  margin-top:10px;
+  margin-right:5px
+}
+#block-book-navigation ul.menu li ul.menu {margin-left:-5px}
+#block-book-navigation ul.menu li ul.menu li {margin-left:25px;padding-right:0}
+#block-book-navigation ul.menu li ul.menu li a.active-trail.active {
+  padding-left: 20px;
+  margin-left: -20px
+}
+#block-book-navigation ul.menu li ul.menu li ul.menu li a.active-trail.active {
+  padding-left: 40px;
+  margin-left: -40px
+}
+#block-book-navigation h2.block-title {
+  padding: 5px;
+  padding-bottom: 0.2em
+}
+#block-book-navigation .block-title .book-title.active {line-height:1.5rem}
+#block-book-navigation .block-title .book-title.active,
+#block-book-navigation .active-trail.active {
+  background:#285e71;
+  color:#fff;
+  display:block;
+  padding:5px;
+  margin-left:0
+}
+#block-book-navigation .block-title .book-title.active {margin-left:-5px}
+#block-book-navigation .expanded.active-trail.active {margin-left:5px}
+#block-book-navigation a.active-trail {
+  margin-left:5px;
+  display:block
+}
+#block-book-navigation li.expanded li.expanded a.active-trail {margin:0}
+/*END Mini-sites (book) styling*/
