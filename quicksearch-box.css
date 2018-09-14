@@ -26,10 +26,10 @@
   position:relative;
   z-index:2
 }
-::-webkit-input-placeholder {color:#222}
-:-moz-placeholder {color:#222;opacity:1}
-::-moz-placeholder  {color:#222;opacity:1}
-:-ms-input-placeholder  {color:#222}
+::-webkit-input-placeholder{color:#222}
+:-moz-placeholder{color:#222;opacity:1}
+::-moz-placeholder{color:#222;opacity:1}
+:-ms-input-placeholder{color:#222}
 #search_scope {
   display:none;
   border:none;
