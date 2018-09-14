@@ -4,6 +4,7 @@
   margin-right:0
 }
 .region-mini-searchtabs-inner {padding-top:7px}
+.region-mini-searchtabs .content {background:#fff}
 #qs-container {margin-top:0px}
 #search-box {
   background:#fff;
@@ -16,7 +17,7 @@
   margin: 0;
   border: none;
   box-shadow: none !important;
-  width:86vw;
+  width:85vw;
   border-radius:none !important
 }
 ::-webkit-input-placeholder{color:#222}
@@ -26,10 +27,11 @@
 #scope-suggestion {
   display:none;
   background:#fff;
-  width:310px;
+  width:100vw;
   min-height:70px;
   border:1px solid #000;
   border-top:none;
+  margin-top:8vw;
   margin-left:-1px;
   margin-bottom:-70px;
   position:absolute;
@@ -60,12 +62,14 @@ img#go {
   border: 0;
   background-color: #cc0033;
   border-radius: 0 !important;
-  padding: 0 5px 3px 0
+  padding: 0 5px 3px 0;
+  float:right
 }
 img#go:hover {cursor:pointer}
 
 /*narrow*/
 @media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape) {  
+  .region-mini-searchtabs .content {background:none}
   #qs-container {
     margin-top:10px;
     float:right
@@ -79,6 +83,10 @@ img#go:hover {cursor:pointer}
     box-shadow: none !important;
     width:190px;
     border-radius:2px 0 0 2px
+  }
+  #scope-suggestion {
+    width:220px;
+    margin-top:0
   }
   img#go {
     width: 27px;
@@ -98,4 +106,5 @@ img#go:hover {cursor:pointer}
 /*normal*/
 @media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape) {
   #primoQueryTemp {width:280px}
+  #scope-suggestion {width:310px}
 }
