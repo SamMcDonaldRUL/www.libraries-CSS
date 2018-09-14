@@ -1,15 +1,9 @@
 /* Styling specific to the database descriptions only */
-div.db_desc_left {
-  clear: both;
-  width: 18%;
-  float: left;
-  text-align: right;
-}
-div.db_desc_right {
-  width: 80%;
-  float: right
-}
-
+div.db_desc_left {clear:both}
+div.db_desc_left p {margin-bottom:0}
+div.db_desc_right {word-break: break-word}
+#connect_url {padding-bottom:1.5em}
+#connect {margin:10px 0}
 /*START styling for the Funder section*/
 #db_thanksto .pad-top {padding-top:30px}
 #db_thanksto .pad-right {
@@ -21,10 +15,7 @@ div.db_desc_right {
 
 /*START connect 'buttons' on database description pages */
 .restricted_note {overflow:auto}
-#connect {
-  float: left;
-  padding: 0 2%
-}
+
 #connect_button{
   background: #36404e;
   border-color: #1859B7;
@@ -40,3 +31,23 @@ div.db_desc_right {
 }
 #connect_button:hover {border:none}
 /*END connect 'buttons' on database description pages */
+
+/*narrow*/
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape) {
+  div.db_desc_left {
+    width: 18%;
+    float: left;
+    text-align: right;
+  }
+  div.db_desc_left p {margin-bottom:1.5em}
+  div.db_desc_right {
+    width: 80%;
+    float: right
+  }
+  #connect_url {margin-bottom:0}
+  #connect {
+    margin:0;
+    float: left;
+    padding: 0 2%
+  }
+}
