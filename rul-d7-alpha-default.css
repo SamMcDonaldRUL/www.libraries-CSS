@@ -6,7 +6,7 @@
 /*START Header section*/
 header {background-color:#36404e}
 #region-branding {margin:-12px 20px -12px 0}
-#section-content {padding:20px 0}
+#section-content {padding:20px 0;margin-top:0}
 #region-content {min-height:478px}
 #zone-content {
   padding-top:0px;
@@ -33,7 +33,6 @@ header {background-color:#36404e}
   margin-bottom:-10px
 }
 .grid-7 .logo-img {margin-left:0}
-.logo-img a:hover {border:none}
 #zone-menu-wrapper {background:#cc0033}
 #zone-menu {
   margin-top:2px;
@@ -159,7 +158,7 @@ header {background-color:#36404e}
 }
 #region-right-menu .content {
   border:none;
-  height:38px;
+  height:35px;
 }
 /*END Hours/My Account/Ask US menu*/
 
@@ -382,9 +381,89 @@ div.mmenusPages .even {
 .breadcrumb .first.last {margin:0}
 /*END breadcrumbs*/
 
+/* START styling for the landing pages */
+.landing-page ul,
+#library-collections,
+#popular-resources,
+#services-tools-services,
+#services-tools-tools,
+#info-for {padding:0}
+#library-collections,
+#services-tools-services,
+#info-for {
+  column-count:2;
+  column-gap:20px
+}
+.landing-page ul li,
+#library-collections li,
+#popular-resources li,
+#services-tools-services li,
+#services-tools-tools li,
+#info-for li {
+  list-style:none;
+  margin-bottom:24px;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  -o-column-break-inside: avoid;
+  -ms-column-break-inside: avoid;
+  column-break-inside: avoid;
+  page-break-inside: avoid
+}
+.link-heading {
+  font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;
+  font-weight:400;
+  font-size:1.076923076923077em;
+  line-height:1.392857142857143em;
+  padding:0 0 3px 0;
+  margin-bottom:0;
+  display:block;
+}
+/* .link-heading a, */
+.link-heading-text {
+  padding-bottom:5px;
+  padding-top:5px
+}
+.no-left-margin {margin-left:0 !important}
+.no-right-margin {margin-right:0 !important}
+.no-margins {
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+.landing-page div {margin-bottom:1.5em}
+.landing-page-image {text-align:right}
+.right_arrow {
+  float:right;
+  display:none
+}
+.landing-page h3 {color:#222}
+/* END styling for the landing pages */
+
+/*START styling for indexes and databases page (/indexes)*/
+#by-subject ul,
+.by-title-alpha ul {
+  -webkit-column-count:2; /* Chrome, Safari, Opera */
+  -moz-column-count:2; /* Firefox */
+  column-count:2;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+  clear:both
+}
+/*END styling for indexes and databases page (/indexes)*/
+
+/*START encyclopedias */
+.view-id-encyclopedias2 {display: block}
+.encyclopedia-list {width:60%}
+/*END encyclopedias */
+
+/*START styles for the faculty-staff directory and faculty directory*/
+#fac-staff-search {width:475px}
+/*END styles for the faculty-staff directory and faculty directory*/
+
 /*START footer*/
 #zone-footer-wrapper {padding:0}
-#region-footer .block:first-child .content {margin-top:20px}
+#region-footer .block:first-child .content, #block-block-51 .content {margin-top:20px}
+#footer-col2.grid-4 {margin-left:10px}
 #footer-col1,
 #footer-col2 {margin-top:10px}
 #footer-col2 p,
@@ -395,3 +474,21 @@ div.mmenusPages .even {
 #col3-last {float:right}
 #region-footer-bottom .content {margin:10px 0;padding:0}
 /*END footer*/
+
+/*START forms */
+textarea, 
+select, 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="email"], 
+input[type="month"], 
+input[type="number"], 
+input[type="password"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="text"], 
+input[type="time"], 
+input[type="url"], 
+input[type="week"] {width:initial}
+/*END forms*/

@@ -5,6 +5,10 @@
 #region-right-menu .content {
   width:auto;
   background:linear-gradient(90deg, transparent 81%, #d83d0e 81%);
+  height:38px
+}
+#region-right-menu li:nth-child(2) {padding: 7px 5px 7px 13px}
+#region-right-menu li:last-child {padding: 6px 15px 8px}
 }
 /* END Hours/My Account/Ask US menu*/
 

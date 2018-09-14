@@ -282,7 +282,7 @@ div.mmenusPages .even {
   list-style-type: none;
   padding:0 0 0 10px
 }
-#region-right-menu li:last-child {padding:0 15px 0 10px}
+#region-right-menu li:last-child {padding:0 10px 0}
 #region-right-menu li img{vertical-align:middle}
 #region-right-menu li a:hover {border:none}
 #region-right-menu .content {
@@ -389,63 +389,6 @@ DIV.descriptive-page-right-box-content UL                {margin-bottom:0}
   margin-bottom:1em;
 }
 /* end descriptive blocks  */
-
-/* START styling for the landing pages */
-.landing-page ul,
-#library-collections,
-#popular-resources,
-#services-tools-services,
-#services-tools-tools,
-#info-for {padding:0}
-#library-collections,
-#services-tools-services,
-#info-for {
-  column-count:2;
-  column-gap:20px
-}
-.landing-page ul li,
-#library-collections li,
-#popular-resources li,
-#services-tools-services li,
-#services-tools-tools li,
-#info-for li {
-  list-style:none;
-  margin-bottom:24px;
-  -webkit-column-break-inside: avoid;
-  -moz-column-break-inside: avoid;
-  -o-column-break-inside: avoid;
-  -ms-column-break-inside: avoid;
-  column-break-inside: avoid;
-  page-break-inside: avoid
-}
-.link-heading {
-  font-family: 'Montserrat', 'Segoe UI', 'Century Gothic', Verdana, sans-serif;
-  font-weight:400;
-  font-size:1.076923076923077em;
-  line-height:1.392857142857143em;
-  padding:0 0 3px 0;
-  margin-bottom:0;
-  display:block;
-}
-/* .link-heading a, */
-.link-heading-text {
-  padding-bottom:5px;
-  padding-top:5px
-}
-.no-left-margin {margin-left:0 !important}
-.no-right-margin {margin-right:0 !important}
-.no-margins {
-  margin-left:0 !important;
-  margin-right:0 !important;
-}
-.landing-page div {margin-bottom:1.5em}
-.landing-page-image {text-align:right}
-.right_arrow {
-  float:right;
-  display:none
-}
-.landing-page h3 {color:#222}
-/* END styling for the landing pages */
 
 /*styling for the libraries and centers page and maps and directions page*/
 .lib_address {
@@ -750,5 +693,10 @@ ul.indented  {
 /*temp class for front page news and exhibits block to reduce the white space - yl 5/22/18*/
 .back-up-temp {margin-top:-175px}
 
-/* encyclopedias */
-.encyclopedia-list {column-count:2;width:590px;clear:initial;}
+/*START encyclopedias */
+.encyclopedia-list {
+  column-count:2;
+  width:590px;
+  clear:initial;
+}
+/*END encyclopedias */
